@@ -1,2 +1,2 @@
-# KrishnaAI
+# Krishna AI
 Generative Krishna AI
