@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getChapterInfo, getVersesFromChapter } from '@/lib/verse-utils';
-import { openai } from '@/lib/openai';
+import { openai, mymodel, deepmodel } from '@/lib/openai';
 
 export async function GET(req: NextRequest) {
   try {
@@ -76,7 +76,7 @@ async function generateChapterSummary(
       : `Create a summary (200-250 words) of Chapter ${chapterNum} of the Bhagavad Gita: "${title}" from Krishna's perspective. Here are some important verses from the chapter:\n\n${importantVerses}`;
     
     const response = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: deepmodel,
       messages: [
         {
           role: 'system',

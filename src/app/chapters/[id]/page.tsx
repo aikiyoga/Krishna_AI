@@ -103,7 +103,7 @@ export default function ChapterDetailPage() {
         </Link>
       </div>
       
-      <h1 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">
+      <h1 className="text-3xl font-bold mb-2 text-[#584B40] dark:text-white">
         {language === 'jp' 
           ? `第${chapter.chapter}章: ${chapter.japaneseTitle}` 
           : `Chapter ${chapter.chapter}: ${chapter.title}`}
@@ -116,7 +116,7 @@ export default function ChapterDetailPage() {
         <p className="text-gray-700 dark:text-gray-300">{summary}</p>
       </div>
       
-      <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
+      <h2 className="text-2xl font-semibold mb-4 text-[#584B40] dark:text-white">
         {language === 'jp' ? '節' : 'Verses'}
       </h2>
       

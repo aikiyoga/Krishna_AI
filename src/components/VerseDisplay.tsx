@@ -48,7 +48,7 @@ export default function VerseDisplay({ verse, language, compact = false }: Verse
         )}
       </div>
       
-      <div className="p-4 space-y-2">
+      <div className="p-4 space-y-2 bg-white dark:bg-gray-800">
         {showSanskrit && !compact && (
           <div className="italic text-gray-600 dark:text-gray-400">
             {verse.text}

@@ -8,7 +8,7 @@ export default function SearchPage() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">
+      <h1 className="text-3xl font-bold mb-6 text-center text-[#584B40] dark:text-white">
         {language === 'jp' ? 'バガヴァッド・ギーターを検索' : 'Search the Bhagavad Gita'}
       </h1>
       

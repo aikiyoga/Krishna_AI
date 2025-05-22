@@ -89,7 +89,7 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
   return (
     <div className="flex flex-col h-full max-w-4xl mx-auto">
       {/* Chat messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-white dark:bg-gray-800">
         {messages.map((message, index) => (
           <div 
             key={index} 
@@ -98,7 +98,7 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
             <div 
               className={`max-w-[80%] rounded-lg p-3 ${
                 message.role === 'user' 
-                  ? 'bg-blue-500 text-white' 
+                  ? 'bg-[#008080E6] text-white' 
                   : 'bg-gray-200 dark:bg-gray-700 dark:text-white'
               }`}
             >
@@ -124,7 +124,7 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
       
       {/* Related verses */}
       {relatedVerses.length > 0 && (
-        <div className="border-t border-gray-200 dark:border-gray-700 p-4">
+        <div className="border-t border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-800">
           <h3 className="text-sm font-medium mb-2">
             {language === 'jp' ? '関連する節' : 'Related Verses'}
           </h3>
@@ -142,20 +142,20 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
       )}
       
       {/* Input form */}
-      <form onSubmit={handleSubmit} className="border-t border-gray-200 dark:border-gray-700 p-4">
+      <form onSubmit={handleSubmit} className="border-t border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-800">
         <div className="flex space-x-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={language === 'jp' ? "クリシュナに質問する..." : "Ask Krishna..."}
-            className="flex-1 rounded-full border border-gray-300 dark:border-gray-600 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white"
+            className="flex-1 rounded-full border border-gray-300 dark:border-gray-600 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#008080E6] dark:bg-gray-800 dark:text-white"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="bg-blue-500 text-white rounded-full px-4 py-2 font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+            className="bg-[#008080E6] text-white rounded-full px-4 py-2 font-medium hover:bg-[#008080C0] focus:outline-none focus:ring-2 focus:ring-[#008080E6] disabled:opacity-50"
           >
             {language === 'jp' ? "送信" : "Send"}
           </button>

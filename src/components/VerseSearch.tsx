@@ -78,7 +78,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
               setSelectedTheme(null);
             }}
             placeholder={language === 'jp' ? 'キーワードを入力...' : 'Enter keywords...'}
-            className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+            className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#008080E6] dark:bg-gray-800"
             disabled={isLoading}
           />
         </div>
@@ -95,7 +95,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
                 onClick={() => handleThemeSelect(theme)}
                 className={`px-3 py-1 text-sm rounded-full ${
                   selectedTheme === theme
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-[#008080E6] text-white'
                     : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
                 }`}
               >
@@ -108,7 +108,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
         <button
           type="submit"
           disabled={isLoading || (!searchQuery && !selectedTheme)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+          className="px-4 py-2 bg-[#008080E6] text-white rounded-md hover:bg-[#008080C0] focus:outline-none focus:ring-2 focus:ring-[#008080E6] disabled:opacity-50"
         >
           {isLoading 
             ? (language === 'jp' ? '検索中...' : 'Searching...') 

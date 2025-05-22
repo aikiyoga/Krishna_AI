@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+        <h2 className="text-2xl font-bold mb-6 text-[#584B40] dark:text-white">
           {language === 'jp' ? '今日の知恵' : 'Today\'s Wisdom'}
         </h2>
         <DailyWisdom language={language} />

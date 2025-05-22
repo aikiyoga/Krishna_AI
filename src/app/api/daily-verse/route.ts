@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDailyVerse } from '@/lib/verse-utils';
-import { openai } from '@/lib/openai';
+import { openai, mymodel, deepmodel } from '@/lib/openai';
 
 export async function GET(req: NextRequest) {
   try {
@@ -37,7 +37,7 @@ async function generateReflection(verse: any, language: 'en' | 'jp'): Promise<st
       : `Provide a brief insight (100-150 words) from Krishna's perspective on this Bhagavad Gita verse:\n\n${translation}`;
     
     const response = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: deepmodel,
       messages: [
         {
           role: 'system',

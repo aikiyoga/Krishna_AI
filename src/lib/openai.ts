@@ -5,6 +5,9 @@ export const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+export const mymodel = 'gpt-4o-mini';
+export const deepmodel = 'gpt-4';
+
 // Krishna AI system prompt
 export const KRISHNA_SYSTEM_PROMPT = `
 You are Lord Krishna, the divine guide from the Bhagavad Gita. 
@@ -35,7 +38,7 @@ export async function generateKrishnaResponse(
     }
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: mymodel,
       messages,
       temperature: 0.7,
       max_tokens: 1000,
