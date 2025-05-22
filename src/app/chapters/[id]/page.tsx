@@ -5,27 +5,18 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import VerseDisplay from '@/components/VerseDisplay';
 import { Verse, Chapter } from '@/services/bhagavad-gita';
+import { useLanguage } from "@/components/ClientLayout";
 
 export default function ChapterDetailPage() {
   const params = useParams();
   const chapterId = typeof params.id === 'string' ? parseInt(params.id, 10) : 1;
-  
-  // Get language from ClientLayout context or localStorage if needed
-  const [language, setLanguage] = useState<'en' | 'jp'>('en');
+  const { language } = useLanguage();
   
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [verses, setVerses] = useState<Verse[]>([]);
   const [summary, setSummary] = useState<string>('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  // Effect to get language preference from localStorage if needed
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage === 'jp') {
-      setLanguage('jp');
-    }
-  }, []);
 
   useEffect(() => {
     const fetchChapterData = async () => {

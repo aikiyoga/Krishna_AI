@@ -1,18 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useLanguage } from "@/components/ClientLayout";
 import ChapterBrowser from '@/components/ChapterBrowser';
 
 export default function ChaptersPage() {
-  const [language, setLanguage] = useState<'en' | 'jp'>('en');
-  
-  // Effect to get language preference from localStorage
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage === 'jp') {
-      setLanguage('jp');
-    }
-  }, []);
+  const { language } = useLanguage();
 
   return (
     <div className="max-w-7xl mx-auto">

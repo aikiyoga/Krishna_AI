@@ -1,20 +1,12 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useLanguage } from "@/components/ClientLayout";
 import Image from "next/image";
 import Link from "next/link";
 import DailyWisdom from "@/components/DailyWisdom";
 
 export default function Home() {
-  const [language, setLanguage] = useState<'en' | 'jp'>('en');
-  
-  // Effect to get language preference from localStorage
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage === 'jp') {
-      setLanguage('jp');
-    }
-  }, []);
+  const { language } = useLanguage();
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -52,7 +44,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+        <div className="relative h-80 sm:h-96 lg:h-120 rounded-lg overflow-hidden shadow-lg">
           <Image
             src="/krishna.jpg"
             alt="Lord Krishna"

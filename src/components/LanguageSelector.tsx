@@ -1,15 +1,22 @@
 'use client';
 
+import { useLanguage } from './ClientLayout';
+
 interface LanguageSelectorProps {
   language: 'en' | 'jp';
   setLanguage: (language: 'en' | 'jp') => void;
 }
 
 export default function LanguageSelector({ language, setLanguage }: LanguageSelectorProps) {
+  const handleLanguageChange = (newLanguage: 'en' | 'jp') => {
+    localStorage.setItem('language', newLanguage);
+    setLanguage(newLanguage);
+  };
+
   return (
     <div className="flex items-center space-x-2">
       <button
-        onClick={() => setLanguage('en')}
+        onClick={() => handleLanguageChange('en')}
         className={`px-3 py-1 rounded-md text-sm font-medium ${
           language === 'en'
             ? 'bg-blue-500 text-white'
@@ -19,7 +26,7 @@ export default function LanguageSelector({ language, setLanguage }: LanguageSele
         English
       </button>
       <button
-        onClick={() => setLanguage('jp')}
+        onClick={() => handleLanguageChange('jp')}
         className={`px-3 py-1 rounded-md text-sm font-medium ${
           language === 'jp'
             ? 'bg-blue-500 text-white'
