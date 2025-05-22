@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Krishna AI
 
-## Getting Started
+Krishna AI is a virtual guide to the Bhagavad Gita, drawing wisdom from the ancient text to help you navigate life's journey. Whether you're seeking guidance on duty, devotion, or any other aspect of life, Krishna AI is here to help.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Chat with Krishna**: Ask Krishna any question you have, and he will respond with wisdom from the Bhagavad Gita.
+- **Explore the Gita**: Browse through the chapters of the Bhagavad Gita and discover the key teachings of each chapter.
+- **Search the Gita**: Search for verses by keyword or theme to find the wisdom you're looking for.
+- **Daily Verse**: Receive a daily verse from the Bhagavad Gita to reflect on and apply to your life.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

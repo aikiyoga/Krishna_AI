@@ -79,6 +79,15 @@ export async function getChapterTitles(): Promise<Chapter[]> {
   return chapters;
 }
 
+export async function getChapterInfo(chapter: number): Promise<Chapter | null> {
+  return chapters.find(c => c.chapter === chapter) || null;
+}
+
+export async function getVersesFromChapter(chapter: number): Promise<Verse[]> {
+  const verses = await getVerses();
+  return verses.filter(v => v.chapter === chapter);
+}
+
 /**
  * Asynchronously retrieves a list of verses from the Bhagavad Gita.
  *
