@@ -22,7 +22,7 @@ export default function Navigation({ language, setLanguage }: NavigationProps) {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-xl font-bold text-blue-600 dark:text-blue-400">
+              <Link href="/" className="text-xl font-bold text-[#008080E6] dark:text-[#00808099]">
                 Krishna AI
               </Link>
             </div>
