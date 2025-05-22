@@ -18,7 +18,7 @@ export default function ChatPage() {
           : 'Ask Krishna your questions and concerns, drawing from the wisdom of the Bhagavad Gita.'}
       </p>
       
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden h-[600px]">
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden h-[70vh]">
         <ChatInterface language={language} />
       </div>
     </div>
