@@ -3,6 +3,7 @@
 :root {
   --background: #FFF3E0;/*Deep Saffron: #FF8000; Very light saffron: #FFF3DE; Saffron: #FFEDCC*/
   --foreground: #401A06;
+  --primary: #008080; /* Adding a primary color variable */
 }
 
 @theme inline {
@@ -14,8 +15,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0C0A09; /*#0C0A09;*/
+    --background: #1e180e; /*#0C0A09;*/
     --foreground: #FAFAF9;
+    --primary: #00B3B3; /* A lighter version for dark mode */
   }
 }
 

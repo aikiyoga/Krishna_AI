@@ -1,4 +1,4 @@
-import { Verse, Chapter, getAllVerses, getChapterTitles } from '@/services/bhagavad-gita';
+import { Verse, Chapter, getAllVerses, getChapterTitles, getRandomVerse } from '@/services/bhagavad-gita';
 
 // Common themes in the Bhagavad Gita
 export const GITA_THEMES = [
@@ -97,23 +97,23 @@ export async function searchVersesByTheme(theme: string, language: 'en' | 'jp' =
   return matchingVerses.sort((a, b) => b.importance - a.importance);
 }
 
-// Get a daily verse (weighted by importance)
-export async function getDailyVerse(): Promise<Verse> {
+/*const weightedVerses: Verse[] = [];
+async function createWeightedVerses() {
+  if (weightedVerses.length > 0) return;
+  
   const verses = await getAllVerses();
-  
-  // Create a weighted array where higher importance verses appear more times
-  const weightedVerses: Verse[] = [];
-  
-  verses.forEach(verse => {
+
+  verses.forEach((verse, index) => {
     // Add the verse to the array 'importance' number of times
     for (let i = 0; i < verse.importance; i++) {
       weightedVerses.push(verse);
     }
   });
-  
-  // Select a random verse from the weighted array
-  const randomIndex = Math.floor(Math.random() * weightedVerses.length);
-  return weightedVerses[randomIndex];
+}*/
+
+// Get a daily verse (weighted by importance)
+export async function getDailyVerse(): Promise<Verse> {
+  return await getRandomVerse();
 }
 
 // Generate a chapter summary
