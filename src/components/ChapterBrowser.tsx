@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Chapter } from '@/services/bhagavad-gita';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ChapterBrowserProps {
   language: 'en' | 'jp';
@@ -63,8 +64,16 @@ export default function ChapterBrowser({ language }: ChapterBrowserProps) {
           href={`/chapters/${chapter.chapter}`}
           className="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
-          <div className="flex items-center justify-between">
-            <span className="text-xl font-bold">
+          <div className="flex items-center">
+            <Image
+              src="/krishna_small_icon.jpeg"
+              alt="Lord Krishna"
+              width={50}
+              height={50}
+              className="rounded-full"
+              priority
+            />
+            <span className="ml-2 text-xl font-bold">
               {language === 'jp' 
                 ? `第${chapter.chapter}章` 
                 : `Chapter ${chapter.chapter}`}
