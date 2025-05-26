@@ -64,19 +64,15 @@ export default function ChapterBrowser({ language }: ChapterBrowserProps) {
           className="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <div className="flex items-center justify-between">
-            <span className="text-2xl font-bold">{chapter.chapter}</span>
-            <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">
-              {language === 'jp' ? 'ヨーガ' : 'Yoga'}
+            <span className="text-xl font-bold">
+              {language === 'jp' 
+                ? `第${chapter.chapter}章` 
+                : `Chapter ${chapter.chapter}`}
             </span>
           </div>
           <h3 className="mt-2 font-medium">
             {language === 'jp' ? chapter.japaneseTitle : chapter.title}
           </h3>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            {language === 'jp' 
-              ? `第${chapter.chapter}章` 
-              : `Chapter ${chapter.chapter}`}
-          </p>
         </Link>
       ))}
     </div>
