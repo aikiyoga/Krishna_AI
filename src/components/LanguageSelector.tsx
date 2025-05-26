@@ -19,7 +19,7 @@ export default function LanguageSelector({ language, setLanguage }: LanguageSele
         onClick={() => handleLanguageChange('en')}
         className={`px-3 py-1 rounded-md text-sm font-medium ${
           language === 'en'
-            ? 'bg-[#008080E6] hover:bg-[#008080C0] text-white'
+            ? 'bg-[#008080E6] hover:bg-[#00a2a2] text-white'
             : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
         }`}
       >
@@ -29,7 +29,7 @@ export default function LanguageSelector({ language, setLanguage }: LanguageSele
         onClick={() => handleLanguageChange('jp')}
         className={`px-3 py-1 rounded-md text-sm font-medium ${
           language === 'jp'
-            ? 'bg-[#008080E6] hover:bg-[#008080C0] text-white'
+            ? 'bg-[#008080E6] hover:bg-[#00a2a2] text-white'
             : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
         }`}
       >

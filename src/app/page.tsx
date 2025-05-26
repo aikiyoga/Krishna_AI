@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="/chat"
-              className="px-6 py-3 text-white bg-[#008080E6] hover:bg-[#008080C0] rounded-md transition-colors font-medium"
+              className="px-6 py-3 text-white bg-[#008080E6] hover:bg-[#00a2a2] rounded-md transition-colors font-medium"
             >
               {language === 'jp' ? 'クリシュナと話す' : 'Talk to Krishna'}
             </Link>
