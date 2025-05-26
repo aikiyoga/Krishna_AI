@@ -108,7 +108,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
         <button
           type="submit"
           disabled={isLoading || (!searchQuery && !selectedTheme)}
-          className="px-4 py-2 bg-[#008080E6] text-white rounded-md hover:bg-[#008080C0] focus:outline-none focus:ring-2 focus:ring-[#008080E6] disabled:opacity-50"
+          className="px-4 py-2 bg-[#008080E6] hover:bg-[#008080C0] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#008080E6] disabled:opacity-50"
         >
           {isLoading 
             ? (language === 'jp' ? '検索中...' : 'Searching...') 

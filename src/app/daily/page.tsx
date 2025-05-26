@@ -8,7 +8,7 @@ export default function DailyWisdomPage() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center text-[#584B40] dark:text-white">
+      <h1 className="text-3xl font-bold mb-6 text-center">
         {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
       </h1>
       

@@ -12,7 +12,7 @@ export default function Home() {
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#584B40] dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-bold">
             {language === 'jp'
               ? 'クリシュナAI'
               : 'Krishna AI'}
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="/chat"
-              className="px-6 py-3 bg-[#008080E6] text-white rounded-md hover:bg-blue-700 transition-colors font-medium"
+              className="px-6 py-3 text-white bg-[#008080E6] hover:bg-[#008080C0] rounded-md transition-colors font-medium"
             >
               {language === 'jp' ? 'クリシュナと話す' : 'Talk to Krishna'}
             </Link>
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-2xl font-bold mb-6 text-[#584B40] dark:text-white">
+        <h2 className="text-2xl font-bold mb-6">
           {language === 'jp' ? '今日の知恵' : 'Today\'s Wisdom'}
         </h2>
         <DailyWisdom language={language} />

@@ -3,7 +3,9 @@
 :root {
   --background: #FFF3E0;/*Deep Saffron: #FF8000; Very light saffron: #FFF3DE; Saffron: #FFEDCC*/
   --foreground: #401A06;
-  --primary: #008080; /* Adding a primary color variable */
+  --primary: #008080E6; /* Adding a primary color variable */
+  --primary-hover: #00a2a2; /* Adding a primary color variable */
+  --title-primary: #584B40;
 }
 
 @theme inline {
@@ -18,6 +20,8 @@
     --background: #1e180e; /*#0C0A09;*/
     --foreground: #FAFAF9;
     --primary: #00B3B3; /* A lighter version for dark mode */
+    --primary-hover: #00e0e0; /* A lighter version for dark mode */
+    --title-primary: #FAFAF9;
   }
 }
 
@@ -26,3 +30,8 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-primary);
+}
+
