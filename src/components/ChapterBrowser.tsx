@@ -66,22 +66,25 @@ export default function ChapterBrowser({ language }: ChapterBrowserProps) {
         >
           <div className="flex items-center">
             <Image
-              src="/krishna_small_icon.jpeg"
+              src={`/chapters/Chapter${chapter.chapter}.jpeg`}
+              // src="/ krishna_small_icon.jpeg"
               alt="Lord Krishna"
               width={50}
               height={50}
-              className="rounded-full"
+              className="rounded-md"
               priority
             />
-            <span className="ml-2 text-xl font-bold">
-              {language === 'jp' 
-                ? `第${chapter.chapter}章` 
-                : `Chapter ${chapter.chapter}`}
-            </span>
+            <div className="flex flex-col items-left ml-4">
+              <span className="text-xl font-bold">
+                {language === 'jp' 
+                  ? `第${chapter.chapter}章` 
+                  : `Chapter ${chapter.chapter}`}
+              </span>
+              <h3 className="mt-2 font-medium">
+                {language === 'jp' ? chapter.japaneseTitle : chapter.title}
+              </h3>
+            </div>
           </div>
-          <h3 className="mt-2 font-medium">
-            {language === 'jp' ? chapter.japaneseTitle : chapter.title}
-          </h3>
         </Link>
       ))}
     </div>

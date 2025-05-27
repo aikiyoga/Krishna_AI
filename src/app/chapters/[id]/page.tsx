@@ -6,6 +6,7 @@ import Link from 'next/link';
 import VerseDisplay from '@/components/VerseDisplay';
 import { Verse, Chapter } from '@/services/bhagavad-gita';
 import { useLanguage } from "@/components/ClientLayout";
+import Image from 'next/image';
 
 export default function ChapterDetailPage() {
   const params = useParams();
@@ -81,7 +82,7 @@ export default function ChapterDetailPage() {
         <p className="text-red-500">{error || (language === 'jp' ? '章が見つかりませんでした。' : 'Chapter not found.')}</p>
         <Link 
           href="/chapters"
-          className="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          className="mt-4 inline-block px-4 py-2 bg-[#008080E6] text-white rounded-md hover:bg-[#00a2a2]"
         >
           {language === 'jp' ? '章一覧に戻る' : 'Back to Chapters'}
         </Link>
@@ -94,7 +95,7 @@ export default function ChapterDetailPage() {
       <div className="mb-6">
         <Link 
           href="/chapters"
-          className="text-blue-500 hover:underline flex items-center"
+          className="text-[#008080E6] hover:underline flex items-center"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -110,10 +111,23 @@ export default function ChapterDetailPage() {
       </h1>
       
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-          {language === 'jp' ? '章の要約' : 'Chapter Summary'}
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300">{summary}</p>
+        <div className="flex flex-col md:flex-row gap-6 items-center">
+          <div className="relative w-full md:w-1/3 h-[300px] md:h-[400px] rounded-2xl shadow-lg flex items-center justify-center">
+            <Image
+              src={`/chapters/Chapter${chapter.chapter}.jpeg`}
+              alt="Gita Chapter"
+              fill
+              className="object-cover rounded-2xl"
+              priority
+            />
+          </div>
+          <div className="w-full md:w-2/3">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+              {language === 'jp' ? '章の要約' : 'Chapter Summary'}
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300">{summary}</p>
+          </div>
+        </div>
       </div>
       
       <h2 className="text-2xl font-semibold mb-4">

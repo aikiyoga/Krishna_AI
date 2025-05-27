@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import VerseDisplay from './VerseDisplay';
 import { Verse } from '@/services/bhagavad-gita';
+import Image from "next/image";
 
 export interface Message {
   role: 'user' | 'assistant' | 'system';
@@ -102,6 +103,16 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
                   : 'bg-gray-200 dark:bg-gray-700 dark:text-white'
               }`}
             >
+              <div className={`flex rounded ${message.role === 'user' ? 'justify-end' : 'justify-start'}`} >
+                <Image
+                  src={`${message.role === 'user' ? '/icon_arjuna.png' : '/icon_krishna.png'}`}
+                  alt="Lord Krishna"
+                  width={40}
+                  height={40}
+                  style={{ objectFit: 'cover' }}
+                  priority
+                />
+              </div>
               <ReactMarkdown>{message.content}</ReactMarkdown>
             </div>
           </div>
