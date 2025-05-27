@@ -22,8 +22,8 @@ export const gita_ch01 : Verse[] = [
     verse: 3,
     text: "paśyaitāṁ pāṇḍu-putrānām āchārya mahatīṁ chamūm vyūḍhāṁ drupada-putreṇa tava śiṣyeṇa dhīmatā",
     importance: 7,
-    translation: "\"O my teacher, behold this great army of the sons of Pandu, so expertly arranged by your intelligent disciple, the son of Drupada (Dhristadyumna).",
-    translation_jp: "「我が師よ、御覧なさい、このパーンドゥの息子たちの偉大な軍勢を。あなたの賢い弟子であるドゥルパダの息子（ドリシュタデュムナ）によって、見事に配置されています。」"
+    translation: "O my teacher, behold this great army of the sons of Pandu, so expertly arranged by your intelligent disciple, the son of Drupada (Dhristadyumna).",
+    translation_jp: "我が師よ、御覧なさい、このパーンドゥの息子たちの偉大な軍勢を。あなたの賢い弟子であるドゥルパダの息子（ドリシュタデュムナ）によって、見事に配置されています。"
   },
   {
     chapter: 1,
