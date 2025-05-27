@@ -37,31 +37,53 @@ export default function ChapterDetailPage() {
         setChapter(chapterInfo);
         setVerses(chapterVerses);
         
-        // Add timeout and retry logic for API calls
-        let retries = 3;
+        // Increase retries and timeout duration
+        let retries = 5; // Increased from 3 to 5
+        let timeoutMs = 5000; // Start with 3 seconds
         let summaryData;
         
         while (retries > 0) {
           try {
-            const summaryResponse = await fetch(`/api/chapter-summary?chapter=${chapterId}&language=${language}`);
+            console.log(`Attempting to fetch summary, timeout: ${timeoutMs}ms, retries left: ${retries}`);
+            
+            // Create an AbortController for timeout
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+            
+            const summaryResponse = await fetch(
+              `/api/chapter-summary?chapter=${chapterId}&language=${language}`,
+              { signal: controller.signal }
+            );
+            
+            // Clear the timeout
+            clearTimeout(timeoutId);
+            
             if (!summaryResponse.ok) {
               throw new Error(`Failed with status: ${summaryResponse.status}`);
             }
+            
             summaryData = await summaryResponse.json();
+            console.log('Summary fetched successfully');
             break;
           } catch (err) {
             retries--;
+            // console.error(`Fetch attempt failed: retries left: ${retries}`);
+            
             if (retries === 0) throw err;
-            await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
+            
+            // Exponential backoff - increase timeout for each retry
+            timeoutMs = timeoutMs * 2;
+            console.log(`Waiting ${timeoutMs}ms before next retry`);
+            await new Promise(r => setTimeout(r, timeoutMs));
           }
         }
         
         setSummary(summaryData.summary);
       } catch (err) {
-        console.error('Error fetching chapter data:', err);
+        //console.error('Error fetching chapter data:', err);
         setError(language === 'jp' 
-          ? '章のデータを取得できませんでした。' 
-          : 'Could not retrieve chapter data');
+          ? '章のデータを取得できませんでした。サーバーが混雑している可能性がありますので、後でもう一度お試しください。' 
+          : 'Could not retrieve chapter data. The server might be busy, please try again later.');
       } finally {
         setIsLoading(false);
       }
