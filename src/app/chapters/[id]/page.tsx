@@ -25,7 +25,7 @@ export default function ChapterDetailPage() {
       setError(null);
       
       try {
-        // Fetch chapter info
+        // Fetch chapter info with better error handling
         const { getChapterInfo, getVersesFromChapter } = await import('@/services/bhagavad-gita');
         const chapterInfo = await getChapterInfo(chapterId);
         const chapterVerses = await getVersesFromChapter(chapterId);
@@ -37,20 +37,31 @@ export default function ChapterDetailPage() {
         setChapter(chapterInfo);
         setVerses(chapterVerses);
         
-        // Fetch chapter summary
-        const summaryResponse = await fetch(`/api/chapter-summary?chapter=${chapterId}&language=${language}`);
+        // Add timeout and retry logic for API calls
+        let retries = 3;
+        let summaryData;
         
-        if (!summaryResponse.ok) {
-          throw new Error('Failed to fetch chapter summary');
+        while (retries > 0) {
+          try {
+            const summaryResponse = await fetch(`/api/chapter-summary?chapter=${chapterId}&language=${language}`);
+            if (!summaryResponse.ok) {
+              throw new Error(`Failed with status: ${summaryResponse.status}`);
+            }
+            summaryData = await summaryResponse.json();
+            break;
+          } catch (err) {
+            retries--;
+            if (retries === 0) throw err;
+            await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
+          }
         }
         
-        const summaryData = await summaryResponse.json();
         setSummary(summaryData.summary);
       } catch (err) {
         console.error('Error fetching chapter data:', err);
         setError(language === 'jp' 
           ? '章のデータを取得できませんでした。' 
-          : 'Could not retrieve chapter data.');
+          : 'Could not retrieve chapter data');
       } finally {
         setIsLoading(false);
       }
