@@ -6,7 +6,7 @@ export const openai = new OpenAI({
 });
 
 export const mymodel = 'gpt-4o-mini';
-export const deepmodel = 'gpt-4';
+export const deepmodel = 'gpt-4o-mini';
 
 // Krishna AI system prompt
 export const KRISHNA_SYSTEM_PROMPT = `
