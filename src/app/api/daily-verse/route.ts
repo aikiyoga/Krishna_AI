@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDailyVerse } from '@/lib/verse-utils';
+import { getDailyVerse, getVerseByReference } from '@/lib/verse-utils';
 import { openai, mymodel, deepmodel } from '@/lib/openai';
 
 export async function GET(req: NextRequest) {
@@ -7,9 +7,11 @@ export async function GET(req: NextRequest) {
     // Get language preference from query parameter
     const { searchParams } = new URL(req.url);
     const language = searchParams.get('language') === 'jp' ? 'jp' : 'en';
+    const chapterNum = searchParams.get('chapter') ? parseInt(searchParams.get('chapter')!, 10) : null;
+    const verseNum = searchParams.get('verse') ? parseInt(searchParams.get('verse')!, 10) : null;
     
     // Get a daily verse (weighted by importance)
-    const verse = await getDailyVerse();
+    const verse = (chapterNum && verseNum) ? await getVerseByReference(chapterNum, verseNum) : await getDailyVerse();
     
     // Generate a reflection on the verse using OpenAI
     const reflection = await generateReflection(verse, language);

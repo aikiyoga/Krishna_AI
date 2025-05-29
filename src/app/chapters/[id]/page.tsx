@@ -16,7 +16,6 @@ export default function ChapterDetailPage() {
   
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [verses, setVerses] = useState<Verse[]>([]);
-  const [summary, setSummary] = useState<string>('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -38,16 +37,6 @@ export default function ChapterDetailPage() {
         setChapter(chapterInfo);
         setVerses(chapterVerses);
         
-        // Fetch chapter summary
-        /*const summaryResponse = await fetch(`/api/chapter-summary?chapter=${chapterId}&language=${language}`);
-        
-        if (!summaryResponse.ok) {
-          throw new Error('Failed to fetch chapter summary');
-        }
-        
-        const summaryData = await summaryResponse.json();
-        setSummary(summaryData.summary);*/
-        //setSummary('not calling api');
       } catch (err) {
         console.error('Error fetching chapter data:', err);
         setError(language === 'jp' 

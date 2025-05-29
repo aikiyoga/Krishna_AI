@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Verse } from '@/services/bhagavad-gita';
+import VerseInsights from './VerseInsights';
 
 interface VerseDisplayProps {
   verse: Verse;
@@ -12,6 +13,7 @@ interface VerseDisplayProps {
 export default function VerseDisplay({ verse, language, compact = false }: VerseDisplayProps) {
   const [showSanskrit, setShowSanskrit] = useState(false);
   const [showBothLanguages, setShowBothLanguages] = useState(false);
+  const [showInsights, setShowInsights] = useState(false);
   
   const translation = language === 'jp' ? verse.translation_jp : verse.translation;
   const otherTranslation = language === 'jp' ? verse.translation : verse.translation_jp;
@@ -48,7 +50,8 @@ export default function VerseDisplay({ verse, language, compact = false }: Verse
         )}
       </div>
       
-      <div className="p-4 space-y-2 bg-white dark:bg-gray-800">
+      <div className="p-4 space-y-2 bg-white dark:bg-gray-800 cursor-pointer"
+        onClick={() => setShowInsights(!showInsights)}>
         {showSanskrit && !compact && (
           <div className="italic text-gray-600 dark:text-gray-400">
             {verse.text}
@@ -76,6 +79,10 @@ export default function VerseDisplay({ verse, language, compact = false }: Verse
               ? `重要度: ${verse.importance}/10` 
               : `Importance: ${verse.importance}/10`}
           </div>
+        )}
+
+        {showInsights && (
+          <VerseInsights language={language} chapter={verse.chapter} verse={verse.verse} />
         )}
       </div>
     </div>

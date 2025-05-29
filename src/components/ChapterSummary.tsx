@@ -14,6 +14,7 @@ export default function ChapterSummary({ language, chapterId }: ChapterSummaryPr
 
   useEffect(() => {
     const fetchChapterSummary = async () => {
+      //console.log(`Fetching chapter summary for chapter ${chapterId} in ${language}`);
       setIsLoading(true);
       setError(null);
       
