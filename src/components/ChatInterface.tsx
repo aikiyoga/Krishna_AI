@@ -192,7 +192,8 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
                 key={`${verse.chapter}-${verse.verse}`} 
                 verse={verse} 
                 language={language}
-                compact
+                compact={windowHeight <= 1000}
+                insights={true}
               />
             ))}
           </div>

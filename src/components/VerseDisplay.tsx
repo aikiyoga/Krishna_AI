@@ -8,9 +8,10 @@ interface VerseDisplayProps {
   verse: Verse;
   language: 'en' | 'jp';
   compact?: boolean;
+  insights?: boolean;
 }
 
-export default function VerseDisplay({ verse, language, compact = false }: VerseDisplayProps) {
+export default function VerseDisplay({ verse, language, compact = false, insights = false }: VerseDisplayProps) {
   const [showSanskrit, setShowSanskrit] = useState(false);
   const [showBothLanguages, setShowBothLanguages] = useState(false);
   const [showInsights, setShowInsights] = useState(false);
@@ -50,7 +51,7 @@ export default function VerseDisplay({ verse, language, compact = false }: Verse
         )}
       </div>
       
-      <div className="p-4 space-y-2 bg-white dark:bg-gray-800 cursor-pointer"
+      <div className={`p-4 space-y-2 bg-white dark:bg-gray-800 ${insights ? 'cursor-pointer' : ''}`}
         onClick={() => setShowInsights(!showInsights)}>
         {showSanskrit && !compact && (
           <div className="italic text-gray-600 dark:text-gray-400">
@@ -81,7 +82,7 @@ export default function VerseDisplay({ verse, language, compact = false }: Verse
           </div>
         )}
 
-        {showInsights && (
+        {insights && showInsights && (
           <VerseInsights language={language} chapter={verse.chapter} verse={verse.verse} />
         )}
       </div>

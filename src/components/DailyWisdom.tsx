@@ -29,6 +29,12 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
         const data = await response.json();
         setDailyVerse(data.verse);
         setReflection(data.reflection);
+
+        // Cache the reflection in the current session
+        const chapter = data.verse.chapter;
+        const verse = data.verse.verse;
+        sessionStorage.setItem(`verse_insights_${chapter}_${verse}_${language}`, data.reflection);
+
       } catch (err) {
         console.error('Error fetching daily verse:', err);
         setError(language === 'jp' 

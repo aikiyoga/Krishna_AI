@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
       );
     }
     
-    // Generate summary using OpenAI
+    // Generate summary using OpenAI if it doesn't exist in the current session
     const summary = await generateChapterSummary(chapter, chapterInfo, verses, language);
     
     return NextResponse.json({

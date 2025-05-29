@@ -129,6 +129,7 @@ export default function ChapterDetailPage() {
             key={`${verse.chapter}-${verse.verse}`} 
             verse={verse} 
             language={language} 
+            insights={true}
           />
         ))}
       </div>

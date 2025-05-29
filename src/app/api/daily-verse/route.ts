@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
     // Get a daily verse (weighted by importance)
     const verse = (chapterNum && verseNum) ? await getVerseByReference(chapterNum, verseNum) : await getDailyVerse();
     
-    // Generate a reflection on the verse using OpenAI
+    // Generate a reflection on the verse using OpenAI if it doesn't exist in the current session
     const reflection = await generateReflection(verse, language);
     
     return NextResponse.json({

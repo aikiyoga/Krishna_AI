@@ -19,14 +19,25 @@ export default function ChapterSummary({ language, chapterId }: ChapterSummaryPr
       setError(null);
       
       try {
-        // Fetch chapter summary
+        // Fetch chapter summary from the current session
+        const summary_in_session = sessionStorage.getItem(`chapter_summary_${chapterId}_${language}`);
+        if (summary_in_session) {
+          setSummary(summary_in_session);
+          setIsLoading(false);
+          return;
+        }
+        
+        // Fetch chapter summary from API
         const summaryResponse = await fetch(`/api/chapter-summary?chapter=${chapterId}&language=${language}`);
         
         if (!summaryResponse.ok) {
           throw new Error('Failed to fetch chapter summary');
         }
-        
+
+        // Cache the summary in the current session
         const summaryData = await summaryResponse.json();
+        sessionStorage.setItem(`chapter_summary_${chapterId}_${language}`, summaryData.summary);
+        
         setSummary(summaryData.summary);
       } catch (err) {
         console.error('Error fetching chapter summary:', err);

@@ -21,10 +21,16 @@ export default function VerseInsights({ language, chapter, verse }: VerseInsight
       setError(null);
       
       try {
-        //console.log("fetching verse: ", language, chapter, verse, isLoading);
-        // temporarily disable api call
-        //if (false) {
         
+        // Fetch verse reflection from the current session
+        const response_in_session = sessionStorage.getItem(`verse_insights_${chapter}_${verse}_${language}`);
+        if (response_in_session) {
+          setReflection(response_in_session);
+          setIsLoading(false);
+          return;
+        }
+        
+        // Fetch verse reflection from API
         const response = await fetch(`/api/daily-verse?language=${language}&chapter=${chapter}&verse=${verse}`);
         
         if (!response.ok) {
@@ -33,9 +39,10 @@ export default function VerseInsights({ language, chapter, verse }: VerseInsight
         
         const data = await response.json();
         setReflection(data.reflection);
-        //}
+
+        // Cache the reflection in the current session
+        sessionStorage.setItem(`verse_insights_${chapter}_${verse}_${language}`, data.reflection);
         
-        //setReflection('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.');
       } catch (err) {
         console.error('Error fetching selected verse:', err);
         setError(language === 'jp' 
