@@ -20,7 +20,26 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [relatedVerses, setRelatedVerses] = useState<Verse[]>([]);
+  const [showRelatedVerses, setShowRelatedVerses] = useState(true);
+  const [copiedMessageIndex, setCopiedMessageIndex] = useState<number | null>(null);
+  const [windowHeight, setWindowHeight] = useState<number>(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Add effect to track window height
+  useEffect(() => {
+    const updateHeight = () => {
+      setWindowHeight(window.innerHeight);
+    };
+    
+    // Set initial height
+    updateHeight();
+    
+    // Add event listener
+    window.addEventListener('resize', updateHeight);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', updateHeight);
+  }, []);
 
   // Scroll to bottom of chat when messages change
   useEffect(() => {
@@ -97,21 +116,48 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
             className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             <div 
-              className={`max-w-[80%] rounded-lg p-3 ${
+              className={`max-w-[80%] rounded-lg p-3 relative ${
                 message.role === 'user' 
                   ? 'bg-[#008080E6] text-white' 
                   : 'bg-gray-200 dark:bg-gray-700 dark:text-white'
               }`}
             >
+              {message.role === 'assistant' && (
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText(message.content);
+                    setCopiedMessageIndex(index);
+                    setTimeout(() => setCopiedMessageIndex(null), 2000);
+                  }}
+                  className="absolute top-2 right-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                  aria-label="Copy to clipboard"
+                >
+                  {copiedMessageIndex === index ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  )}
+                </button>
+              )}
               <div className={`flex rounded ${message.role === 'user' ? 'justify-end' : 'justify-start'}`} >
-                <Image
-                  src={`${message.role === 'user' ? '/icon_arjuna.png' : '/icon_krishna.png'}`}
-                  alt="Lord Krishna"
-                  width={40}
-                  height={40}
-                  style={{ objectFit: 'cover' }}
-                  priority
-                />
+                {windowHeight > 1000 && (
+                  <Image
+                    src={`${message.role === 'user' ? '/icon_arjuna.png' : '/icon_krishna.png'}`}
+                    alt={`${message.role === 'user' ? 'Arjuna' : 'Lord Krishna'}`}
+                    width={40}
+                    height={40}
+                    style={{ objectFit: 'cover' }}
+                    priority
+                  />
+                )}
+                { windowHeight <= 1000 && (
+                  <span className="font-sans italic font-bold">{message.role === 'user' ? 'You' : 'Lord Krishna'}</span>
+                )}
               </div>
               <ReactMarkdown>{message.content}</ReactMarkdown>
             </div>
@@ -136,10 +182,11 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
       {/* Related verses */}
       {relatedVerses.length > 0 && (
         <div className="border-t border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-800">
-          <h3 className="text-sm font-medium mb-2">
-            {language === 'jp' ? '関連する節' : 'Related Verses'}
+          <h3 className="text-sm font-medium cursor-pointer"
+            onClick={() => setShowRelatedVerses(!showRelatedVerses)}>
+            {language === 'jp' ? `関連する節${showRelatedVerses ? '' : 'を表示'}` : `${showRelatedVerses ? '' : 'Show '}Related Verses`}
           </h3>
-          <div className="space-y-2">
+          <div className={`mt-2 space-y-2 max-h-[150px] overflow-y-auto pr-2 ${showRelatedVerses ? '' : 'hidden'}`}>
             {relatedVerses.map((verse) => (
               <VerseDisplay 
                 key={`${verse.chapter}-${verse.verse}`} 
