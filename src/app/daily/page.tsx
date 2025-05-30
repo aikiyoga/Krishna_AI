@@ -17,7 +17,7 @@ export default function DailyWisdomPage() {
           height={80}
           className="mr-2 -mt-4"
         />
-        <h1 className={`text-3xl font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
+        <h1 className={`text-3xl font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'} max-[450px]:text-xl`}>
           {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
         </h1>
       </div>

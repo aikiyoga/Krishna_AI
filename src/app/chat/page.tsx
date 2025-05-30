@@ -17,7 +17,7 @@ export default function ChatPage() {
           height={80}
           className="mr-2 -mt-4"
         />
-        <h1 className={`text-3xl font-bold mb-4 text-center ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
+        <h1 className={`text-3xl font-bold mb-4 text-center ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'} max-[450px]:text-xl`}>
         {language === 'jp' ? 'クリシュナとの対話' : 'Conversation with Krishna'}
         </h1>
       </div>

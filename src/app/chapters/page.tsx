@@ -17,7 +17,7 @@ export default function ChaptersPage() {
           height={80}
           className="mr-2 -mt-4"
         />
-        <h1 className={`text-3xl mb-4 font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
+        <h1 className={`text-3xl mb-4 font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'} max-[450px]:text-xl`}>
         {language === 'jp' ? 'バガヴァッド・ギーターの章' : 'Chapters of the Bhagavad Gita'}
         </h1>
       </div>
