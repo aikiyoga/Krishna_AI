@@ -12,11 +12,11 @@ export default function Home() {
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold">
-            {language === 'jp'
-              ? 'クリシュナAI'
-              : 'Krishna AI'}
-          </h1>
+          <div className="flex flex-row items-center text-6xl mb-2 krishna-ai-title">
+            <span className={`${language === 'jp' ? 'krishna_jp' : 'krishna'}`}>{language === 'jp' ? 'クリシュナ' : 'Krishna'}</span>
+            <span className="ai">AI</span>
+          </div>
+
           <p className="text-xl text-gray-600 dark:text-gray-300">
             {language === 'jp'
               ? 'バガヴァッド・ギーターの神聖な導き手'
@@ -56,15 +56,24 @@ export default function Home() {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-2xl font-bold mb-6">
-          {language === 'jp' ? '今日の知恵' : 'Today\'s Wisdom'}
-        </h2>
+        <div className="flex flex-row items-center mb-2 krishna-ai-title">
+          <Image
+            src="/verse.png"
+            alt="Bhagavad Gita"
+            width={60}
+            height={60}
+            className="mr-1 -mt-2"
+          />
+          <h2 className={`text-3xl font-bold ${language === 'jp' ? 'krishna_jp' : 'krishna'}`}>
+            {language === 'jp' ? '今日の知恵' : 'Today\'s Wisdom'}
+          </h2>
+        </div>
         <DailyWisdom language={language} />
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-[#FFEBCC] dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+          <h3 className={`text-2xl font-semibold mb-3 text-gray-900 dark:text-white ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
             {language === 'jp' ? '多言語サポート' : 'Multilingual Support'}
           </h3>
           <p className="text-gray-600 dark:text-gray-400">
@@ -75,7 +84,7 @@ export default function Home() {
         </div>
 
         <div className="bg-[#FFEBCC] dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+          <h3 className={`text-2xl font-semibold mb-3 text-gray-900 dark:text-white ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
             {language === 'jp' ? '節の文脈と解説' : 'Verse Context & Commentary'}
           </h3>
           <p className="text-gray-600 dark:text-gray-400">
@@ -86,7 +95,7 @@ export default function Home() {
         </div>
 
         <div className="bg-[#FFEBCC] dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+          <h3 className={`text-2xl font-semibold mb-3 text-gray-900 dark:text-white ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
             {language === 'jp' ? 'パーソナライズされたガイダンス' : 'Personalized Guidance'}
           </h3>
           <p className="text-gray-600 dark:text-gray-400">

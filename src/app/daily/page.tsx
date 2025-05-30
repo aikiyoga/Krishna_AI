@@ -2,15 +2,25 @@
 
 import { useLanguage } from "@/components/ClientLayout";
 import DailyWisdom from '@/components/DailyWisdom';
+import Image from 'next/image';
 
 export default function DailyWisdomPage() {
   const { language } = useLanguage();
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">
-        {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
-      </h1>
+      <div className="flex flex-row items-center justify-center mb-2 -ml-24">
+        <Image
+          src="/verse.png"
+          alt="Bhagavad Gita"
+          width={80}
+          height={80}
+          className="mr-2 -mt-4"
+        />
+        <h1 className={`text-3xl font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
+          {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
+        </h1>
+      </div>
       
       <p className="text-center mb-8 text-gray-600 dark:text-gray-400">
         {language === 'jp' 

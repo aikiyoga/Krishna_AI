@@ -95,11 +95,21 @@ export default function ChapterDetailPage() {
         </Link>
       </div>
       
-      <h1 className="text-3xl font-bold mb-2">
+
+      <div className="flex flex-row items-center justify-center mb-2 -ml-24">
+        <Image
+          src="/gita_openbook.png"
+          alt="Bhagavad Gita"
+          width={80}
+          height={80}
+          className="mr-2 -mt-4"
+        />
+        <h1 className={`text-3xl mb-4 font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
         {language === 'jp' 
           ? `第${chapter.chapter}章: ${chapter.japaneseTitle}` 
           : `Chapter ${chapter.chapter}: ${chapter.title}`}
-      </h1>
+        </h1>
+      </div>
       
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
         <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -119,7 +129,7 @@ export default function ChapterDetailPage() {
         </div>
       </div>
       
-      <h2 className="text-2xl font-semibold mb-4">
+      <h2 className={`text-2xl font-semibold text-center mb-4 ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'}`}>
         {language === 'jp' ? '節' : 'Verses'}
       </h2>
       

@@ -122,7 +122,7 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
                   : 'bg-gray-200 dark:bg-gray-700 dark:text-white'
               }`}
             >
-              {message.role === 'assistant' && (
+              {message.role === 'assistant' && index > 0 && (
                 <button 
                   onClick={() => {
                     navigator.clipboard.writeText(message.content);

@@ -35,3 +35,44 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--title-primary);
 }
 
+.nav-title {
+  color: var(--primary)!important;
+}
+
+/* Container for title */
+.krishna-ai-title {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+/* Krishna part */
+.krishna-ai-title .krishna, .krishna-self {
+  font-family: 'Philosopher', serif;
+  font-weight: 700;
+  color: var(--title-primary);
+}
+
+/* AI part */
+.krishna-ai-title .ai {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #666;
+}
+
+/* Krishna part */
+.krishna-ai-title .krishna_jp, .krishna-self_jp {
+  font-family: 'Kaisei Opti', serif;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  color: var(--title-primary);
+}
+
+/* AI part */
+.krishna-ai-title .ai_jp {
+  font-family: 'Kaisei Opti', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #666;
+}

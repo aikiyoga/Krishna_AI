@@ -69,9 +69,6 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
 
   return (
     <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">
-        {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
-      </h2>
       
       {dailyVerse && (
         <>

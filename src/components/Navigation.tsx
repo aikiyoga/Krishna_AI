@@ -23,7 +23,10 @@ export default function Navigation({ language, setLanguage }: NavigationProps) {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl font-bold text-[#008080E6] dark:text-[#00B3B3]">
-                Krishna AI
+                <div className="flex flex-row items-center text-2xl krishna-ai-title">
+                  <span className={`nav-title ${language === 'jp' ? 'krishna_jp' : 'krishna'}`}>{language === 'jp' ? 'クリシュナ' : 'Krishna'}</span>
+                  <span className="nav-title ai">AI</span>
+                </div>
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
