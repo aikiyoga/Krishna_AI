@@ -3,9 +3,16 @@
 import { useLanguage } from "@/components/ClientLayout";
 import DailyWisdom from '@/components/DailyWisdom';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function DailyWisdomPage() {
   const { language } = useLanguage();
+  const [reloadKey, setReloadKey] = useState(0);
+
+  const handleReload = () => {
+    sessionStorage.removeItem("daily_verse");
+    setReloadKey(prev => prev + 1);
+  };
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -20,6 +27,15 @@ export default function DailyWisdomPage() {
         <h1 className={`text-3xl font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'} max-[450px]:text-xl`}>
           {language === 'jp' ? '今日の知恵' : 'Daily Wisdom'}
         </h1>
+        <button onClick={handleReload} className="ml-2 hover:scale-110 transition-transform duration-200 ease-in-out" aria-label={language === 'jp' ? 'リロード' : 'Reload'}>
+          <Image
+            src="/reload.png"
+            alt={language === 'jp' ? 'リロード' : 'Reload'}
+            width={36}
+            height={36}
+            className="hover:rotate-90 transition-transform"
+          />
+        </button>
       </div>
       
       <p className="text-center mb-8 text-gray-600 dark:text-gray-400">
@@ -28,7 +44,7 @@ export default function DailyWisdomPage() {
           : 'Receive daily insights and wisdom from the Bhagavad Gita.'}
       </p>
       
-      <DailyWisdom language={language} />
+      <DailyWisdom key={reloadKey} language={language} />
       
       <div className="mt-12 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
         <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">

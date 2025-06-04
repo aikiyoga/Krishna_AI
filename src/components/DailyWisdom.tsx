@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Verse } from '@/services/bhagavad-gita';
+import { getRandomVerse } from '@/services/bhagavad-gita';
 import VerseDisplay from './VerseDisplay';
 
 interface DailyWisdomProps {
@@ -20,7 +21,39 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
       setError(null);
       
       try {
-        const response = await fetch(`/api/daily-verse?language=${language}`);
+        let daily_verse = null;
+        let response_in_session = null;
+        const dailyverse_in_session = sessionStorage.getItem("daily_verse");
+        if (dailyverse_in_session) {
+          daily_verse = JSON.parse(dailyverse_in_session);
+          const d_chapter = daily_verse.chapter;
+          const d_verse = daily_verse.verse;
+          response_in_session = sessionStorage.getItem(`verse_insights_${d_chapter}_${d_verse}_${language}`);
+        }
+
+        if (dailyverse_in_session && response_in_session) {
+          setDailyVerse(daily_verse);
+          setReflection(response_in_session);
+          setIsLoading(false);
+          return; // Do not fetch from server
+        }
+
+        // Choose random verse and attempt to load from the current session
+        daily_verse = await getRandomVerse();
+        response_in_session = sessionStorage.getItem(`verse_insights_${daily_verse.chapter}_${daily_verse.verse}_${language}`);
+        if (response_in_session) {
+          sessionStorage.setItem("daily_verse", JSON.stringify(daily_verse));
+          setDailyVerse(daily_verse);
+          setReflection(response_in_session);
+          setIsLoading(false);
+          return; // Do not fetch from server
+        }
+
+        // Fetch verse reflection from API if it does not exist in the current session.
+        // mostlikely, daily_verse should be not_null here though.
+        const response = daily_verse ?
+          await fetch(`/api/daily-verse?language=${language}&chapter=${daily_verse.chapter}&verse=${daily_verse.verse}`) :
+          await fetch(`/api/daily-verse?language=${language}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch daily verse');
@@ -31,6 +64,7 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
         setReflection(data.reflection);
 
         // Cache the reflection in the current session
+        sessionStorage.setItem("daily_verse", JSON.stringify(data.verse));
         const chapter = data.verse.chapter;
         const verse = data.verse.verse;
         sessionStorage.setItem(`verse_insights_${chapter}_${verse}_${language}`, data.reflection);

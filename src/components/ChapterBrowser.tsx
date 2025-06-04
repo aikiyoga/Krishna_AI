@@ -75,7 +75,7 @@ export default function ChapterBrowser({ language }: ChapterBrowserProps) {
               priority
             />
             <div className="flex flex-col items-left ml-4">
-              <span className="text-xl font-bold">
+              <span className={`text-xl font-bold ${language === 'jp' ? 'krishna-self_jp' : 'krishna-self'} `}>
                 {language === 'jp' 
                   ? `第${chapter.chapter}章` 
                   : `Chapter ${chapter.chapter}`}

@@ -22,10 +22,8 @@ export default function VerseDisplay({ verse, language, compact = false, insight
   return (
     <div className={`rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden ${compact ? 'text-sm' : ''}`}>
       <div className="bg-gray-100 dark:bg-gray-800 px-4 py-2 flex justify-between items-center">
-        <h3 className="font-medium">
-          {language === 'jp' 
-            ? `第${verse.chapter}章 第${verse.verse}節` 
-            : `Chapter ${verse.chapter}, Verse ${verse.verse}`}
+        <h3 className="font-medium font-semibold">
+          {`${verse.chapter}.${verse.verse}`}
         </h3>
         
         {!compact && (

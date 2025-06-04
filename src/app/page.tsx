@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from "react";
 import { useLanguage } from "@/components/ClientLayout";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +8,13 @@ import DailyWisdom from "@/components/DailyWisdom";
 
 export default function Home() {
   const { language } = useLanguage();
+  const [reloadKey, setReloadKey] = useState(0);
+
+  // Handler to reload Today's Wisdom
+  const handleReload = () => {
+    sessionStorage.removeItem("daily_verse");
+    setReloadKey(prev => prev + 1); // This will force DailyWisdom to remount
+  };
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -67,8 +75,22 @@ export default function Home() {
           <h2 className={`text-3xl font-bold ${language === 'jp' ? 'krishna_jp' : 'krishna'}`}>
             {language === 'jp' ? '今日の知恵' : 'Today\'s Wisdom'}
           </h2>
+          <button
+            onClick={handleReload}
+            className="ml-2 focus:outline-none"
+            aria-label={language === 'jp' ? '今日の知恵を更新' : 'Reload Today\'s Wisdom'}
+            type="button"
+          >
+            <Image
+              src="/reload.png"
+              alt={language === 'jp' ? 'リロード' : 'Reload'}
+              width={32}
+              height={32}
+              className="hover:rotate-90 transition-transform"
+            />
+          </button>
         </div>
-        <DailyWisdom language={language} />
+        <DailyWisdom language={language} key={reloadKey} />
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
