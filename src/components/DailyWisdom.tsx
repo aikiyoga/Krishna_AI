@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Verse } from '@/services/bhagavad-gita';
-import { getRandomVerse } from '@/services/bhagavad-gita';
+import { getRandomVerse, getInsightsForVerse } from '@/services/bhagavad-gita';
 import VerseDisplay from './VerseDisplay';
 
 interface DailyWisdomProps {
@@ -28,6 +28,19 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
           daily_verse = JSON.parse(dailyverse_in_session);
           const d_chapter = daily_verse.chapter;
           const d_verse = daily_verse.verse;
+
+          // Fetch verse reflection from the source
+          const verseInsights = await getInsightsForVerse(d_chapter, d_verse);
+          if (verseInsights) {
+            setDailyVerse(daily_verse);
+            setReflection(language === 'jp' ? verseInsights.insights_jp : verseInsights.insights);
+            sessionStorage.setItem(`verse_insights_${d_chapter}_${d_verse}_${language}`, 
+              language === 'jp' ? verseInsights.insights_jp : verseInsights.insights);
+            setIsLoading(false);
+            return; // Do not fetch from server
+          }
+
+          // Fetch verse reflection from the current session
           response_in_session = sessionStorage.getItem(`verse_insights_${d_chapter}_${d_verse}_${language}`);
         }
 
@@ -45,6 +58,18 @@ export default function DailyWisdom({ language }: DailyWisdomProps) {
           sessionStorage.setItem("daily_verse", JSON.stringify(daily_verse));
           setDailyVerse(daily_verse);
           setReflection(response_in_session);
+          setIsLoading(false);
+          return; // Do not fetch from server
+        }
+
+        // Fetch verse reflection from the source
+        const verseInsights = await getInsightsForVerse(daily_verse.chapter, daily_verse.verse);
+        if (verseInsights) {
+          sessionStorage.setItem("daily_verse", JSON.stringify(daily_verse));
+          setDailyVerse(daily_verse);
+          setReflection(language === 'jp' ? verseInsights.insights_jp : verseInsights.insights);
+          sessionStorage.setItem(`verse_insights_${daily_verse.chapter}_${daily_verse.verse}_${language}`, 
+            language === 'jp' ? verseInsights.insights_jp : verseInsights.insights);
           setIsLoading(false);
           return; // Do not fetch from server
         }

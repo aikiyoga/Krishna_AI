@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Verse } from '@/services/bhagavad-gita';
+import { getInsightsForVerse } from '@/services/bhagavad-gita';
 import VerseDisplay from './VerseDisplay';
 
 interface VerseInsightsProps {
@@ -21,7 +21,14 @@ export default function VerseInsights({ language, chapter, verse }: VerseInsight
       setError(null);
       
       try {
-        
+        // Fetch verse reflection from the source
+        const verseInsights = await getInsightsForVerse(chapter, verse);
+        if (verseInsights) {
+          setReflection(language === 'jp' ? verseInsights.insights_jp : verseInsights.insights);
+          setIsLoading(false);
+          return;
+        }
+
         // Fetch verse reflection from the current session
         const response_in_session = sessionStorage.getItem(`verse_insights_${chapter}_${verse}_${language}`);
         if (response_in_session) {
@@ -54,7 +61,7 @@ export default function VerseInsights({ language, chapter, verse }: VerseInsight
     };
     
     fetchVerseInsights();
-  }, [language]);
+  }, [language, chapter, verse]);
 
   if (isLoading) {
     return (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getChapterSummary } from '@/services/bhagavad-gita';
 
 interface ChapterSummaryProps {
   language: 'en' | 'jp';
@@ -19,6 +20,14 @@ export default function ChapterSummary({ language, chapterId }: ChapterSummaryPr
       setError(null);
       
       try {
+        // Fetch chapter summary from the source
+        const chapterSummary = await getChapterSummary(chapterId);
+        if (chapterSummary) {
+          setSummary(language === 'jp' ? chapterSummary.summary_jp : chapterSummary.summary);
+          setIsLoading(false);
+          return;
+        }
+
         // Fetch chapter summary from the current session
         const summary_in_session = sessionStorage.getItem(`chapter_summary_${chapterId}_${language}`);
         if (summary_in_session) {
