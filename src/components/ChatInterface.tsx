@@ -55,6 +55,19 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
     setMessages([{ role: 'assistant', content: initialGreeting }]);
   }, [language]);
 
+  const headerText = language === 'jp' ? 'クリシュナの言葉：' : 'Krishna\'s Words:';
+
+  const handleCopyToClipboard = async (index: number) => {
+    try {
+      const textToCopy = headerText + '\n' + messages[index].content;
+      await navigator.clipboard.writeText(textToCopy);
+      setCopiedMessageIndex(index);
+      setTimeout(() => setCopiedMessageIndex(null), 2000); // Reset after 2 seconds
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -125,9 +138,10 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
               {message.role === 'assistant' && index > 0 && (
                 <button 
                   onClick={() => {
-                    navigator.clipboard.writeText(message.content);
+                    handleCopyToClipboard(index);
+                    /*navigator.clipboard.writeText(message.content);
                     setCopiedMessageIndex(index);
-                    setTimeout(() => setCopiedMessageIndex(null), 2000);
+                    setTimeout(() => setCopiedMessageIndex(null), 2000);*/
                   }}
                   className="absolute top-2 right-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
                   aria-label="Copy to clipboard"
