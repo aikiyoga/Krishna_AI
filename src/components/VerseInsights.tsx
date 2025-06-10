@@ -19,7 +19,7 @@ export default function VerseInsights({ language, chapter, verse }: VerseInsight
   const copyTooltip = language === 'jp' ? 'クリップボードにコピー' : 'Copy to clipboard';
   const copySuccessTooltip = language === 'jp' ? 'コピー成功！' : 'Copied!';
 
-  const headerText = language === 'jp' ? `${chapter}章${verse}節の詩に対するクリシュナの洞察` : `Krishna\'s Insight on the Verse ${chapter}:${verse}`;
+  const headerText = language === 'jp' ? `${chapter}章${verse}節に対するクリシュナの洞察：` : `Krishna\'s Insight on the Verse ${chapter}:${verse}:`;
 
   const handleCopyToClipboard = async (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent event bubbling to parent
