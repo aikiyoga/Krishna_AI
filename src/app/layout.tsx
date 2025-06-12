@@ -32,6 +32,8 @@ export default function RootLayout({
       <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
       <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
