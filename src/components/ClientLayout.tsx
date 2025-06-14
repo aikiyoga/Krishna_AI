@@ -3,6 +3,21 @@
 import { useState, ReactNode, createContext, useContext, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 
+function useDarkMode() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  useEffect(() => {
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(darkModeQuery.matches);
+    
+    const handler = (e: MediaQueryListEvent) => setIsDarkMode(e.matches);
+    darkModeQuery.addEventListener('change', handler);
+    return () => darkModeQuery.removeEventListener('change', handler);
+  }, []);
+  
+  return isDarkMode;
+}
+
 // Create a context for language
 export const LanguageContext = createContext<{
   language: 'en' | 'jp';
@@ -20,7 +35,8 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   const [language, setLanguage] = useState<'en' | 'jp'>('en');
-
+  const isDarkMode = useDarkMode();
+  
   // Initialize language from localStorage
   useEffect(() => {
     const storedLanguage = localStorage.getItem('language');
@@ -49,7 +65,9 @@ export default function ClientLayout({
               </span>
               <a href="https://www.aiki-yoga.net/" style={{ textDecoration: 'none' }} title="Aiki Yoga Website">
                 <img
-                  src="https://www.aiki-yoga.net/assets/img/lotus-flower.png"
+                  src={`https://www.aiki-yoga.net/assets/img/${
+                    isDarkMode ? 'lotus-flower-light.png' : 'lotus-flower.png'
+                  }`}
                   width="50"
                   style={{ opacity: 0.3 }}
                   alt="Aiki Yoga"
@@ -57,7 +75,9 @@ export default function ClientLayout({
               </a>
               <a href="https://www.instagram.com/aikimatsu.yoga" style={{ textDecoration: 'none' }} title="Aiki Yoga Instagram">
                 <img
-                  src="https://www.aiki-yoga.net/assets/img/instagram.png"
+                  src={`https://www.aiki-yoga.net/assets/img/${
+                    isDarkMode ? 'instagram-light.png' : 'instagram.png'
+                  }`}
                   width="30"
                   style={{ opacity: 0.3 }}
                   alt="instagram"
@@ -65,7 +85,9 @@ export default function ClientLayout({
               </a>
               <a href="https://aikiyoga.substack.com" style={{ textDecoration: 'none' }} title="Aiki Yoga Substack">
                 <img
-                  src="https://www.aiki-yoga.net/assets/img/substack.png"
+                  src={`https://www.aiki-yoga.net/assets/img/${
+                    isDarkMode ? 'substack-light.png' : 'substack.png'
+                  }`}
                   width="30"
                   style={{ opacity: 0.3 }}
                   alt="substack"
@@ -73,7 +95,9 @@ export default function ClientLayout({
               </a>
               <a href="https://x.com/aiki_yoga" style={{ textDecoration: 'none' }} title="Aiki Yoga Twitter/X">
                 <img
-                  src="https://www.aiki-yoga.net/assets/img/twitter-x.png"
+                  src={`https://www.aiki-yoga.net/assets/img/${
+                    isDarkMode ? 'twitter-x-light.png' : 'twitter-x.png'
+                  }`}
                   width="30"
                   style={{ opacity: 0.3 }}
                   alt="Twitter/X"
