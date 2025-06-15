@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, ReactNode, createContext, useContext, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 
 function useDarkMode() {
@@ -23,26 +22,7 @@ function useDarkMode() {
 export const LanguageContext = createContext<{
   language: 'en' | 'jp';
   setLanguage: (language: 'en' | 'jp') => void;
-  redirect: (path: string) => void;
-}>({ 
-  language: 'en', 
-  setLanguage: () => {}, 
-  redirect: () => {} 
-});
-
-function MyComponent() {
-  const { language, redirect } = useLanguage();
-  
-  const handleButtonClick = () => {
-    redirect('https://www.aiki-yoga.net/');
-  };
-  
-  return (
-    <button onClick={handleButtonClick}>
-      {language === 'jp' ? 'ページに移動' : 'Go to page'}
-    </button>
-  );
-}
+}>({ language: 'en', setLanguage: () => { } });
 
 // Custom hook to use the language context
 export const useLanguage = () => useContext(LanguageContext);
@@ -56,7 +36,6 @@ export default function ClientLayout({
 }) {
   const [language, setLanguage] = useState<'en' | 'jp'>('en');
   const isDarkMode = useDarkMode();
-  const router = useRouter();
   
   // Initialize language from localStorage
   useEffect(() => {
@@ -66,19 +45,13 @@ export default function ClientLayout({
     }
   }, []);
 
-  // Function to redirect to a different page
-  const redirect = (path: string) => {
-    router.push(path);
-  };
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, redirect }}>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
       <div className="min-h-screen flex flex-col">
         <Navigation language={language} setLanguage={setLanguage} />
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
           {typeof children === 'function' ? (children as ChildrenFunction)({ language }) : children}
         </main>
-        <MyComponent />
         <footer className="bg-[#FFEBCC] dark:bg-gray-800 shadow-inner py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
             {language === 'jp'
