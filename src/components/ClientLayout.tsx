@@ -65,7 +65,7 @@ export default function ClientLayout({
               </span>
               <a href="https://www.aiki-yoga.net/" style={{ textDecoration: 'none' }} title="Aiki Yoga Website">
                 <img
-                  src={`https://www.aiki-yoga.net/assets/img/${
+                  src={`/social/${
                     isDarkMode ? 'lotus-flower-light.png' : 'lotus-flower.png'
                   }`}
                   width="50"
@@ -75,7 +75,7 @@ export default function ClientLayout({
               </a>
               <a href="https://www.instagram.com/aikimatsu.yoga" style={{ textDecoration: 'none' }} title="Aiki Yoga Instagram">
                 <img
-                  src={`https://www.aiki-yoga.net/assets/img/${
+                  src={`/social/${
                     isDarkMode ? 'instagram-light.png' : 'instagram.png'
                   }`}
                   width="30"
@@ -85,7 +85,7 @@ export default function ClientLayout({
               </a>
               <a href="https://aikiyoga.substack.com" style={{ textDecoration: 'none' }} title="Aiki Yoga Substack">
                 <img
-                  src={`https://www.aiki-yoga.net/assets/img/${
+                  src={`/social/${
                     isDarkMode ? 'substack-light.png' : 'substack.png'
                   }`}
                   width="30"
@@ -95,7 +95,7 @@ export default function ClientLayout({
               </a>
               <a href="https://x.com/aiki_yoga" style={{ textDecoration: 'none' }} title="Aiki Yoga Twitter/X">
                 <img
-                  src={`https://www.aiki-yoga.net/assets/img/${
+                  src={`/social/${
                     isDarkMode ? 'twitter-x-light.png' : 'twitter-x.png'
                   }`}
                   width="30"
