@@ -88,7 +88,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
             {language === 'jp' ? 'または、テーマで探す' : 'Or Browse by Theme'}
           </p>
           <div className="flex flex-wrap gap-2">
-            {GITA_THEMES.slice(0, 10).map((theme) => (
+            {GITA_THEMES.map((theme) => (
               <button
                 key={theme}
                 type="button"

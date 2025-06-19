@@ -67,9 +67,12 @@ export async function searchVersesByTheme(theme: string, language: 'en' | 'jp' =
   // Map themes to related keywords
   const themeKeywords: Record<string, string[]> = {
     'duty': ['duty', 'responsibility', 'dharma', 'obligation'],
+    'dharma': ['dharma', 'duty', 'responsibility', 'righteousness', 'obligation'],
     'karma': ['karma', 'action', 'consequence', 'result', 'fruit'],
     'devotion': ['devotion', 'bhakti', 'worship', 'love', 'surrender'],
+    'bhakti': ['bhakti', 'devotion', 'worship', 'love', 'surrender'],
     'knowledge': ['knowledge', 'wisdom', 'understanding', 'jnana', 'truth'],
+    'action': ['action', 'karma', 'work', 'activity', 'doing'],
     'meditation': ['meditation', 'dhyana', 'concentration', 'focus', 'mind'],
     'yoga': ['yoga', 'discipline', 'practice', 'union', 'path'],
     'renunciation': ['renunciation', 'tyaga', 'detachment', 'abandon', 'give up'],
@@ -78,8 +81,11 @@ export async function searchVersesByTheme(theme: string, language: 'en' | 'jp' =
     'nature': ['nature', 'prakriti', 'material', 'creation', 'manifest'],
     'gunas': ['guna', 'quality', 'mode', 'sattva', 'rajas', 'tamas'],
     'liberation': ['liberation', 'moksha', 'freedom', 'release', 'salvation'],
+    'moksha': ['moksha', 'liberation', 'freedom', 'release', 'salvation'],
     'war': ['war', 'battle', 'fight', 'conflict', 'struggle'],
     'peace': ['peace', 'tranquility', 'calm', 'harmony', 'serenity'],
+    'wisdom': ['wisdom', 'knowledge', 'understanding', 'jnana', 'truth'],
+    'detachment': ['detachment', 'tyaga', 'renunciation', 'abandon', 'give up'],
   };
   
   const keywords = themeKeywords[theme.toLowerCase()] || [theme];
