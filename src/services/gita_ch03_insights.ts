@@ -51,73 +51,73 @@ export const gita_ch03_insights: VerseWithInsights[] =
             insights_jp: "私はアルジュナに明確で直接的な命令を与える。『ニヤタム・クル・カルマ・トゥヴァム』――『あなたの定められた義務を遂行しなさい』。私は、行動が不活動よりも『ジャヤーハ』、つまり優れていると率直に述べる。その理由は単に哲学的であるだけでなく、実践的でもある。肉体の基本的な維持（『シャリーラ・ヤートラー』）でさえ、行動なしには不可能だ。人は食べるため、生きるために働かなければならない。したがって、不活動は不自然であり、衰退につながる。肉体的な生存にさえ行動が必要なのだから、賢明な道はそれを避けることではなく、カルマの束縛を生み出さない方法でそれを遂行する方法を学ぶことである。答えは行動を止めることではなく、あなたの行動を霊化することなのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 9,
             insights: "Here I reveal the secret to liberating action. All work ('karma') performed in this world causes bondage, *unless* it is performed 'yajnarthat'—as a sacrifice for Me (Vishnu). 'Yajna' means sacrifice, and all prescribed duties are meant to be performed in a spirit of sacrifice for the satisfaction of the Supreme. Therefore, I instruct Arjuna, 'perform your duties for My satisfaction' ('tad-artham karma'). By acting not for personal gain but as an offering to Me, with a consciousness free from selfish attachment ('mukta-sangah'), one can remain active in the world yet completely free from its binding reactions. This is the master key to freedom in action.",
             insights_jp: "ここで私は、解放へと導く行動の秘密を明らかにする。この世で行われるすべての仕事（『カルマ』）は、それが『ヤジュニャールタット』、つまり私（ヴィシュヌ）への犠牲として行われない限り、束縛を引き起こす。『ヤジュニャ』は犠牲を意味し、すべての定められた義務は、至高者の満足のための犠牲の精神で遂行されるべきものである。したがって、私はアルジュナに、『私の満足のためにあなたの義務を遂行しなさい』（『タッド・アルタム・カルマ』）と指示する。個人的な利益のためではなく、私への捧げ物として、利己的な執着から解放された意識（『ムクタ・サンガハ』）をもって行動することによって、人は世界で活動的でありながら、その束縛的な反応から完全に自由でいられる。これこそが、行動における自由へのマスターキーなのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 10,
             insights: "I explain the cosmic origin of 'yajna' (sacrifice). In the very beginning, the creator Prajapati (Brahma) created mankind along with this principle of sacrifice. It is the fundamental law of cooperative existence. He instructed humanity to 'prosper' ('prasavisyadhvam') through the performance of these duties. This principle of yajna is like an 'ista-kama-dhuk,' a wish-fulfilling cow. By performing one's duties in a mood of selfless sacrifice, all necessities and desires are automatically fulfilled. It is the cosmic system I have designed for prosperity and harmony. Sacrifice is not about loss; it is the very engine of universal abundance.",
             insights_jp: "私は『ヤジュニャ』（犠牲）の宇宙的な起源を説明する。まさに創造の初めに、創造主プラジャーパティ（ブラフマー）は、この犠牲の原則と共に人類を創造した。それは協調的存在の基本法則である。彼は人類に、これらの義務の遂行を通じて『繁栄する』（『プラサヴィシュヤドヴァム』）よう指示した。このヤジュニャの原則は、『イシュタ・カーマ・ドゥク』、つまり願いを叶える牛のようである。無私の犠牲の気持ちで自己の義務を遂行することによって、すべての必要と欲望は自動的に満たされる。それは私が繁栄と調和のために設計した宇宙のシステムである。犠牲は喪失に関するものではなく、宇宙的な豊かさのまさにそのエンジンなのである。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 11,
             insights: "I elaborate on the mechanism of yajna. It is a system of reciprocal nourishment. By performing your prescribed sacrifices, you please and sustain the 'devas'—the celestial gods who manage the affairs of the universe, such as rain, sun, and wind. In turn, 'te devah bhavayantu vah'—those devas will please and sustain you by providing all the necessities of life. Through this 'parasparam bhavayantah' (mutual cooperation and nourishment), the highest good ('sreyah param') and prosperity for all is achieved. This cosmic cooperation is the foundation of a balanced and harmonious world. It is a system where selfless giving leads to universal well-being.",
             insights_jp: "私はヤジュニャのメカニズムについて詳述する。それは相互扶助のシステムである。あなたの定められた犠牲を捧げることによって、あなたは宇宙の事柄、例えば雨、太陽、風などを管理する天上の神々、『デーヴァ』を喜ばせ、支えることになる。その見返りとして、『テー・デーヴァー・バーヴァヤントゥ・ヴァハ』、つまりそれらのデーヴァは、生命の必需品すべてを提供することによって、あなたを喜ばせ、支えるだろう。この『パラスパラム・バーヴァヤンタハ』（相互の協力と滋養）を通して、最高の善（『シュレーヤハ・パラム』）とすべての者の繁栄が達成される。この宇宙的な協力こそが、バランスの取れた調和のとれた世界の基盤なのである。それは無私の与えることが、普遍的な幸福へとつながるシステムなのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 12,
             insights: "I describe the consequence of breaking this sacred pact of yajna. The devas, pleased by your sacrifices, will provide all desired necessities ('istan bhogan'). These are gifts from them. Therefore, one who enjoys these gifts without first offering them back in sacrifice is a 'stena eva sah'—verily a thief. It is like taking from the cosmic storehouse without replenishing it. Such a person enjoys the fruits of the universal system without acknowledging their dependence on it or contributing their share. This act of ungrateful consumption disrupts the cosmic balance and is an act of theft against the gods and against the natural order itself.",
             insights_jp: "私は、この神聖なヤジュニャの協定を破った場合の結果を描写する。デーヴァは、あなたの犠牲によって喜ばれ、望むすべての必需品（『イシュターン・ボーガーン』）を提供するだろう。これらは彼らからの贈り物である。したがって、まず犠牲としてそれらを捧げることなくこれらの贈り物を享受する者は、『ステーナ・エーヴァ・サハ』、つまりまことに泥棒である。それは、宇宙の貯蔵庫から補充せずに取るようなものだ。そのような人物は、宇宙システムへの依存を認めず、また自分の分を貢献することなく、その果実を享受する。この恩知らずな消費行為は、宇宙のバランスを乱し、神々や自然の秩序そのものに対する窃盗行為なのである。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 13,
             insights: "I distinguish between sacred eating and sinful eating. My devotees ('santah') are released from all sins because they eat food that is 'yajna-sistasinah'—the remnants of sacrifice. They first offer their food to Me, recognizing that all things come from Me, and then accept the sanctified remnants as My grace. In contrast, those who cook and eat only for 'atma-karanat' (for their own sense enjoyment), without any sense of sacrifice or gratitude, are not just eating food. They 'bhunjate te tv agham papa,' which means they 'verily eat only sin.' Their food is tainted by selfishness and ingratitude, and it binds them further in the material world instead of liberating them.",
             insights_jp: "私は神聖な食事と罪深い食事を区別する。私の献身者（『サンタハ』）は、すべての罪から解放される。なぜなら彼らは『ヤジュニャ・シシュターシナハ』、つまり犠牲の残りを食べるからだ。彼らはまず、すべてのものが私から来ることを認識し、食べ物を私に捧げ、そして聖化された残りを私の恵みとして受け入れる。対照的に、『アートマ・カーラナート』（自己の感覚満足のため）だけに、犠牲や感謝の念なく調理し食べる者たちは、ただ食べ物を食べているだけではない。彼らは『ブンジャテ・テ・トゥ・アガム・パーパー』、つまり『まさに罪だけを食べる』のだ。彼らの食事は利己主義と恩知らずによって汚されており、彼らを解放するどころか、物質世界にさらに縛り付ける。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 14,
             insights: "I now reveal the great cycle of sustenance, which is rooted in action. All living beings ('bhutani') subsist on food ('annad'). Food is produced from rains ('parjanyad'). Rains are produced from the performance of sacrifice ('yajnad'). And finally, sacrifice ('yajna') itself is 'karma-samudbhavah'—born of prescribed duties. This is the great cosmic wheel of life. It demonstrates that our very survival is dependent on a chain of causation that begins with performing our duties. To neglect our duty is to break a link in this chain, endangering not only our own existence but the harmonious functioning of the entire universe. Action is the foundation of life.",
             insights_jp: "今、私は行動に根差した、偉大な維持のサイクルを明らかにする。すべての生き物（『ブーターニ』）は食べ物（『アンナード』）に依存している。食べ物は雨（『パルジャニャード』）から生産される。雨は犠牲（『ヤジュニャード』）の遂行から生産される。そして最後に、犠牲（『ヤジュニャ』）そのものが『カルマ・サムッドバヴァハ』、つまり定められた義務から生まれるのだ。これこそが、生命の偉大な宇宙の車輪である。それは、我々のまさに生存が、我々の義務を遂行することから始まる因果の連鎖に依存していることを示している。我々の義務を怠ることは、この連鎖の輪を断ち切ることであり、我々自身の存在だけでなく、宇宙全体の調和のとれた機能を危険にさらすことになる。行動こそが生命の基盤なのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 15,
             insights: "I trace the origin of this cycle back to its ultimate source. Prescribed duties ('karma') are born from the 'Brahma' (the Vedas). The Vedas themselves are manifested directly from the 'Aksara,' the imperishable Supreme Personality of Godhead—from Me. Therefore, the 'sarva-gatam brahma' (the all-pervading Transcendence) is 'nityam yajne pratisthitam' (eternally situated in acts of sacrifice). This means that every time a prescribed duty is performed in the mood of sacrifice, it connects the performer directly to the all-pervading Supreme. Sacrifice is not just a worldly duty; it is the point where the material and spiritual realms meet. It is where action becomes divine.",
             insights_jp: "私は、このサイクルの起源を、その究極の源まで遡る。定められた義務（『カルマ』）は、『ブラフマ』（ヴェーダ）から生まれる。ヴェーダ自体は、『アクシャラ』、つまり不滅の至上主、つまり私から直接顕現している。したがって、『サルヴァ・ガタム・ブラフマ』（遍満する超越者）は、『ニティヤム・ヤジュニェ・プラティシュティタム』（永遠に犠牲の行為に位置している）のである。これは、定められた義務が犠牲の精神で遂行されるたびに、その行為者が遍満する至高者と直接結びつくことを意味する。犠牲は単なる世俗的な義務ではない。それは物質と霊の領域が出会う点なのである。それは、行動が神聖になる場所なのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 16,
             insights: "I give a strong warning to those who willfully ignore this cosmic cycle of sacrifice. The one who 'does not follow this wheel' that I have set in motion lives a life of 'aghayuh'—a life of sin. Such a person is 'indriyaramo,' finding delight only in the gratification of their senses, with no higher purpose. For such a person, their life is 'mogham'—lived in vain, uselessly. They take from the system without giving back, and their existence becomes a burden on the earth. They miss the entire purpose of human life, which is to achieve spiritual realization by participating harmoniously in this divine arrangement. Theirs is a wasted life.",
             insights_jp: "私は、この宇宙的な犠牲のサイクルを意図的に無視する者たちに、強い警告を与える。私が動かし始めた『この車輪に従わない』者は、『アガーユフ』、つまり罪深い人生を送る。そのような人物は『インドリヤーラーモ』であり、より高い目的を持たず、ただ自己の感覚の満足にのみ喜びを見出す。そのような人物にとって、その人生は『モーガム』、つまり無駄に、虚しく生きられる。彼らは与えることなくシステムから奪い、その存在は地上への負担となる。彼らは、この神聖な仕組みに調和して参加することによって霊的な実現を達成するという、人間生命の全目的を見失っている。彼らの人生は無駄にされた人生なのである。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 17,
             insights: "Having established the necessity of work for the unenlightened, I now describe the position of one who is fully self-realized. For the person who 'rejoices only in the self' ('atma-ratih'), who is 'satisfied with the self' ('atma-trptas'), and finds contentment in the self alone ('atmany eva ca santustas'), there is no prescribed duty ('tasya karyam na vidyate'). Why? Because the purpose of all prescribed duties is to gradually purify the consciousness and elevate one to this very platform of self-realization. Once the destination is reached, the path is no longer needed. Such a person acts out of pure spiritual love, not out of obligation, for they have already attained the goal.",
             insights_jp: "悟りを開いていない者にとっての仕事の必要性を確立した後、今、私は完全に自己実現した者の立場を描写する。『自己においてのみ喜び』（アートマ・ラティヒ）、『自己に満足し』（アートマ・トリプタシュ）、そして自己においてのみ満足を見出す（『アートマニ・エーヴァ・チャ・サントゥシュタス』）者にとって、定められた義務はない（『タスヤ・カールヤム・ナ・ヴィディヤテ』）。なぜか？なぜなら、すべての定められた義務の目的は、徐々に意識を浄化し、人をまさにこの自己実現の段階へと高めることだからだ。目的地に到達すれば、道はもはや必要ない。そのような人物は、義務からではなく、純粋な霊的な愛から行動する。なぜなら、彼らはすでに目標を達成しているからだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 18,
             insights: "I further elaborate on the liberated state of the self-realized soul. Such a person has nothing to gain by performing prescribed duties, nor do they have anything to lose by not performing them. Their purpose is fulfilled. More importantly, they do not 'depend on any being for any purpose' ('na casya sarva-bhutesu kaschid artha-vyapasrayah'). They are completely self-sufficient, drawing their happiness and purpose from within, from the Atman. They are not dependent on praise, wealth, or support from any other being, from the highest demigod to the smallest ant. This state of complete independence and inner fulfillment is a mark of true liberation.",
             insights_jp: "私は、自己実現した魂の解放された状態についてさらに詳述する。そのような人物は、定められた義務を遂行することによって得るものは何もなく、また、それらを行わないことによって失うものもない。彼らの目的は果たされている。さらに重要なことに、彼らは『いかなる目的のためにも、いかなる存在にも依存しない』（『ナ・チャースヤ・サルヴァ・ブーテーシュ・カシチッド・アルタ・ヴィヤパーシュラヤハ』）。彼らは完全に自給自足であり、その幸福と目的を内から、アートマンから引き出している。彼らは、最高の神々から最小のアリに至るまで、他のいかなる存在からの賞賛、富、または支援にも依存しない。この完全な独立と内なる充足の状態こそが、真の解放の証なのである。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 19,
             insights: "Even though the enlightened soul has no prescribed duty, I still advise Arjuna to act. 'Therefore,' I say, 'one should act as a matter of duty' ('karyam karma samacara'). And the key is to be 'asaktah,' unattached to the results. Why? Because 'by working without attachment one attains the Supreme' ('param apnoti purusah'). This is a crucial point. While the self-realized may have no need to act for their own sake, acting without attachment is itself a powerful yoga that leads directly to Me. For Arjuna, who is not yet fully realized, this is the prescribed path. He must act, but he must learn to act without selfish desire. This is the way to bridge the gap between his current state and perfection.",
             insights_jp: "悟りを開いた魂には定められた義務がないにもかかわらず、私はなおもアルジュナに行動するよう助言する。『したがって』と私は言い、『義務として行動すべきである』（『カールヤム・カルマ・サマーチャラ』）。そして重要なのは、『アサクタハ』、つまり結果に執着しないことである。なぜか？なぜなら、『執着なく働くことによって、人は至高に到達する』（『パラム・アープノーティ・プールシャハ』）からだ。これは極めて重要な点である。自己実現した者は、自己のために行動する必要はないかもしれないが、執着なく行動すること自体が、直接私へと導く強力なヨーガなのである。まだ完全に実現していないアルジュナにとって、これこそが定められた道である。彼は行動しなければならないが、利己的な欲望なく行動することを学ばなければならない。これこそが、彼の現在の状態と完成との間のギャップを埋める方法なのだ。"
         },
         {
-            "chapter": 3,
+            chapter: 3,
             verse: 20,
             insights: "I provide historical precedent to encourage Arjuna. Great kings of the past, like Janaka, attained perfection ('samsiddhim') through this very path: the performance of prescribed duties ('karmanaiva'). They did not abandon their kingdoms to sit in the forest. They ruled, they acted, but they did so with inner detachment. Furthermore, I give Arjuna another reason to act: 'loka-sangraham,' for the sake of educating and holding the world together. As a leader, his actions set the standard. Even if he felt no personal need to fight, he should do so to set the proper example for the common people, who look to great men for guidance.",
             insights_jp: "私はアルジュナを励ますために、歴史的な先例を提示する。過去の偉大な王たち、例えばジャナカのような人々は、まさにこの道、つまり定められた義務の遂行（『カルマナイヴァ』）を通して、完成（『サンシッディム』）を達成した。彼らは王国を捨てて森に座ることはなかった。彼らは統治し、行動したが、内なる離欲をもってそうしたのだ。さらに、私はアルジュナに行動するためのもう一つの理由を与える。『ローカ・サンッグラハム』、つまり世界を教育し、一つにまとめるためである。指導者として、彼の行動は基準となる。たとえ彼が個人的に戦う必要性を感じなかったとしても、偉大な人物を導きとして仰ぐ一般の人々のために、正しい手本を示すべきなのである。"

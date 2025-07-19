@@ -1,0 +1,450 @@
+{
+  "title": "Bhagavad Gita - Complete Index",
+  "description": "Combined index of all extracted Bhagavad Gita chapters",
+  "total_chapters": 17,
+  "total_verses": 653,
+  "chapters": [
+    {
+      "chapter": 2,
+      "verse_count": 72,
+      "filename": "gita_ch02_combined.json",
+      "file_size_bytes": 167617,
+      "first_verse": {
+        "chapter": 2,
+        "verse": 1,
+        "text": "sañjaya uvācha taṁ tathā kṛpayāviṣṭam aśru-pūrṇākulekṣaṇam viṣīdantam idaṁ vākyam uvācha madhusūdanaḥ",
+        "importance": 6,
+        "translation": "Sanjaya said: To him (Arjuna) who was thus overwhelmed with compassion, with his eyes full of tears and distressed, Madhusudana (Krishna), spoke these words.",
+        "translation_jp": "サンジャヤは言った：このように深い憐れみに圧倒され、目に涙をいっぱい溜めて苦悩している彼（アルジュナ）に、マドゥスダナ（クリシュナ）はこれらの言葉を述べました。",
+        "insights": "I see Arjuna, my dear friend, completely submerged in a sea of his own making. His compassion is misplaced, born of attachment, not wisdom. His tears are for the temporary bodies, not the eternal souls. As Madhusudana, the slayer of demons, I know that the greatest demon is the delusion that arises from the ego. It is this inner demon I must now slay for Arjuna. He is distressed and in need of guidance, and though he does not yet know it, his suffering is the very catalyst that will open his heart to the timeless truth I am about to share. This moment of despair is the fertile ground for his spiritual awakening.",
+        "insights_jp": "私は、我が愛する友アルジュナが、自らが作り出した海の底に完全に沈んでいるのを見る。彼の憐れみは見当違いであり、知恵からではなく執着から生まれている。彼の涙は永遠の魂のためではなく、一時的な肉体のためのものだ。悪魔を殺す者マドゥスーダナとして、私は最大の悪魔がエゴから生じる迷妄であることを知っている。今、私がアルジュナのために殺さなければならないのは、この内なる悪魔だ。彼は苦悩し、導きを必要としている。彼がまだ気づいていないが、彼の苦しみこそが、私が分かち合おうとしている永遠の真理に彼の心を開かせる触媒となるのだ。この絶望の瞬間こそが、彼の霊的な目覚めのための肥沃な土壌である。"
+      },
+      "last_verse": {
+        "chapter": 2,
+        "verse": 72,
+        "text": "eṣā brāhmī sthitiḥ pārtha naināṁ prāpya vimuhyati sthitvāsyām anta-kāle 'pi brahma-nirvāṇam ṛchchhati",
+        "importance": 10,
+        "translation": "That is the way of the spiritual and godly life, after attaining which a man is not bewildered. If one is thus situated even at the hour of death, he can enter into the kingdom of God.",
+        "translation_jp": "それが霊的で神聖な生活の道であり、それを達成した後、人は惑わされない。もし人が死の時でさえこのように位置づけられているなら、彼は神の王国に入ることができる。",
+        "insights": "This is my concluding statement on the enlightened state in this chapter. I tell Arjuna that this state is 'brahmi sthitih,' the spiritual or godly way of life. Having attained it, 'na vimuhyati'—a person is never again bewildered by the illusions of the material world. I then give a final, crucial assurance. If one is situated in this consciousness even at the 'anta-kale' (the hour of death), they will attain 'brahma-nirvanam,' liberation in the Absolute, and 'enter into the kingdom of God.' It doesn't matter what one's past life has been. Attaining this state of consciousness, even at the very end, is the ultimate victory and guarantees one's entrance into the eternal spiritual realm.",
+        "insights_jp": "これは、この章における悟りの状態に関する私の結論的な声明である。私はアルジュナに、この状態が『ブラフミー・スティティヒ』、つまり霊的で神聖な生き方であると告げる。それを達成すれば、『ナ・ヴィムヒャティ』、つまり人は二度と物質世界の幻想に惑わされることはない。そして私は、最後の、極めて重要な保証を与える。もし人が『アンタ・カーレ』（死の時）でさえこの意識に位置づけられているなら、彼らは『ブラフマ・ニルヴァーナム』、つまり絶対者における解放を達成し、『神の王国に入る』だろう。その人の過去の人生がどうであったかは問題ではない。この意識状態を、まさに最後の瞬間にでさえ達成することが、究極の勝利であり、永遠の霊的な領域への入場を保証するのである。"
+      }
+    },
+    {
+      "chapter": 3,
+      "verse_count": 43,
+      "filename": "gita_ch03_combined.json",
+      "file_size_bytes": 99024,
+      "first_verse": {
+        "chapter": 3,
+        "verse": 1,
+        "text": "arjuna uvācha jyāyasī chet karmaṇas te matā buddhir janārdana tat kiṁ karmaṇi ghore māṁ niyojayasi keśava",
+        "importance": 10,
+        "translation": "Arjuna said: O Janardana, O Keshava, if You consider intelligence to be better than fruitive work, then why do You engage me in this terrible action?",
+        "translation_jp": "アルジュナは言った：ジャナルダナよ、ケーシャヴァよ、もしあなたが果報的な仕事よりも知性が優れているとお考えなら、なぜ私をこの恐ろしい行動に従事させるのですか？",
+        "insights": "Arjuna's question is sincere and intelligent. He has heard my praise of 'buddhi' (intelligence) and now sees an apparent contradiction in my command for him to perform 'ghore karmani' (terrible action). This confusion is a natural and necessary stage of learning. He is trying to reconcile two seemingly opposing paths: the path of contemplation and the path of action. He thinks he must choose one over the other. My upcoming explanation will dissolve this false dichotomy, showing him that true intelligence is not expressed by abandoning action, but by performing action with the right consciousness. His confusion is the perfect setup for revealing the profound secret of Karma Yoga.",
+        "insights_jp": "アルジュナの問いは誠実で知的だ。彼は私の『ブッディ』（知性）への賞賛を聞き、今、彼に『ゴーレ・カルマニ』（恐ろしい行動）を命じる私の言葉に明らかな矛盾を見ている。この混乱は学習の自然で必要な段階だ。彼は二つの対立するように見える道、つまり瞑想の道と行動の道を調和させようとしている。彼は一方を選ばなければならないと考えている。私のこれからの説明は、この誤った二分法を解消し、真の知性とは行動を放棄することによってではなく、正しい意識をもって行動を遂行することによって表現されることを彼に示すだろう。彼の混乱は、カルマ・ヨーガの深遠な秘密を明らかにするための完璧な準備なのだ。"
+      },
+      "last_verse": {
+        "chapter": 3,
+        "verse": 43,
+        "text": "evaṁ buddheḥ paraṁ buddhvā saṁstabhyātmānam ātmanā jahi śatruṁ mahā-bāho kāma-rūpaṁ durāsadam ",
+        "importance": 10,
+        "translation": "Thus knowing oneself to be transcendental to the material senses, mind, and intelligence, O mighty-armed Arjuna, one should steady the mind by deliberate spiritual intelligence (Krishna consciousness) and thus—by spiritual strength—conquer this insatiable enemy known as lust.",
+        "translation_jp": "したがって、物質的な感覚、心、そして知性よりも超越的であると自分自身を知り、強大な腕を持つアルジュナよ、意図的な霊的知性（クリシュナ意識）によって心を安定させ、したがって—霊的な力によって—欲望として知られるこの飽くなき敵を征服すべきである。",
+        "insights": "This is my final instruction in this chapter, the culmination of the entire argument. 'Thus, knowing oneself to be transcendental to' the senses, mind, and intelligence, one must take action. By the strength of one's real self ('atmanam'), one must steady the lower self, the mind ('samstabhya'). This must be done with 'buddheh param buddhva'—by understanding that which is higher than the intelligence, which is the soul itself, and by deliberate spiritual intelligence. With this spiritual strength, one must 'jahi satrum'—conquer the enemy, which is 'kama-rupam,' in the form of lust, and which is 'durasadam,' formidable. The ultimate weapon is the soul's own inherent strength, realized through spiritual knowledge and steady intelligence.",
+        "insights_jp": "これこそが、この章における私の最後の指示であり、議論全体の頂点である。『したがって、自分自身が感覚、心、そして知性を超越していると知り』、人は行動を起こさなければならない。自己の真の自己（『アートマーナム』）の力によって、人は下位の自己、つまり心（『サンスタビア』）を安定させなければならない。これは、『ブッデーヘ・パラム・ブッドヴァー』、つまり知性よりも高次のもの、すなわち魂そのものを理解し、意図的な霊的知性によって行われなければならない。この霊的な力をもって、人は『ジャヒ・シャトゥルム』、つまり敵を征服しなければならない。その敵とは、『カーマ・ルーパム』、欲望の形をとり、『ドゥラーサダム』、手ごわいものである。究極の武器は、霊的な知識と不動の知性を通して実現される、魂自身の固有の力なのである。"
+      }
+    },
+    {
+      "chapter": 4,
+      "verse_count": 42,
+      "filename": "gita_ch04_combined.json",
+      "file_size_bytes": 97891,
+      "first_verse": {
+        "chapter": 4,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha imaṁ vivasvate yogaṁ proktavān aham avyayam vivasvān manave prāha manur ikṣvākave 'bravīt",
+        "importance": 8,
+        "translation": "The Supreme Lord said: I taught this imperishable Yoga to Vivasvan (the sun-god); Vivasvan taught it to Manu (the father of mankind); and Manu in turn instructed it to Ikshvaku.",
+        "translation_jp": "至上主は言われた：私はこの不滅のヨーガをヴィヴァスヴァーン（太陽神）に説いた。ヴィヴァスヴァーンはマヌ（人類の父）に説き、マヌはイクシュヴァークに教えた。",
+        "insights": "I begin by establishing the ancient and authoritative nature of this knowledge. This is not some new philosophy I have invented for Arjuna's benefit. It is an 'imperishable' ('avyayam') science that I Myself first taught to the sun-god, Vivasvan, at the dawn of creation. From him, it was passed down through a royal lineage of saintly kings. I am establishing the 'parampara,' the disciplic succession, to show that this knowledge is timeless and divine in origin. It is not a product of mundane human speculation. Arjuna should understand he is about to receive the same eternal truth that has governed the cosmos from the very beginning.",
+        "insights_jp": "私は、この知識の古くからの権威ある性質を確立することから始める。これは、私がアルジュナの利益のために考案した新しい哲学ではない。それは、私が創造の夜明けに太陽神ヴィヴァスヴァーンに最初に教えた『不滅の』（アヴィヤヤム）科学である。彼から、それは聖なる王たちの王統を通じて受け継がれてきた。私は、この知識が時代を超越し、神聖な起源を持つことを示すために、『パランパラー』、つまり師弟継承を確立しているのだ。それは世俗的な人間の思索の産物ではない。アルジュナは、まさに最初から宇宙を支配してきたのと同じ永遠の真理を受け取ろうとしていることを理解すべきである。"
+      },
+      "last_verse": {
+        "chapter": 4,
+        "verse": 42,
+        "text": "tasmād ajñāna-sambhūtaṁ hṛt-sthaṁ jñānāsinātmanaḥ chittvāinaṁ saṁśayaṁ yogam ātiṣṭhottiṣṭha bhārata ",
+        "importance": 10,
+        "translation": "Therefore, with the weapon of knowledge born of transcendental relation with the Supreme, O Bharata, cut off the doubts from your heart generated by ignorance. Armed with yoga, O conqueror of riches, stand up and fight.",
+        "translation_jp": "したがって、至高との超越的な関係から生まれた知識の武器をもって、バーラタよ、無知によって生み出された心の疑いを断ち切りなさい。ヨーガで武装して、富を征服する者よ、立ち上がって戦いなさい。",
+        "insights": "This is my final, powerful command to Arjuna in this chapter. 'Therefore,' I tell him, he must take the 'jnanasi,' the sword of knowledge, and use it to 'chittva,' or cut off, the 'samsayam,' the doubts, that have arisen in his heart from ignorance. This is an internal battle. Once these doubts are slain by the weapon of knowledge, he must 'atistha,' or take refuge in, Yoga—the yoga of detached action. Having armed himself internally with knowledge and externally with the practice of yoga, he must then 'uttistha, Bharata'—'Stand up and fight, O descendant of Bharata!' The time for discussion is over. The time for enlightened, fearless action has come.",
+        "insights_jp": "これこそが、この章における、アルジュナへの私の最後の、力強い命令である。『したがって』と私は彼に告げる、彼は『ジュニャーナーシ』、つまり知識の剣を取り、それを使って、無知から彼の心に生じた『サンシャヤム』、つまり疑いを『チットヴァー』、つまり断ち切らなければならない。これは内なる戦いである。これらの疑いが知識の武器によって殺されたら、彼は『アーティシュタ』、つまりヨーガ、離欲した行動のヨーガに避難しなければならない。内面的には知識で、外面的にはヨーガの実践で武装した後、彼は次に『ウッティシュタ、バーラタ』、つまり『立ち上がって戦え、バーラタの子孫よ！』。議論の時間は終わった。悟りを開いた、恐れを知らない行動の時が来たのだ。"
+      }
+    },
+    {
+      "chapter": 5,
+      "verse_count": 29,
+      "filename": "gita_ch05_combined.json",
+      "file_size_bytes": 65859,
+      "first_verse": {
+        "chapter": 5,
+        "verse": 1,
+        "text": "arjuna uvācha saṁnyāsaṁ karmaṇāṁ kṛṣṇa punar yogaṁ cha śaṁsasi yach chreya etayor ekaṁ tan me brūhi su-niśchitam",
+        "importance": 10,
+        "translation": "Arjuna said: O Krishna, You praise the renunciation of actions, and again the performance of action with devotion. Please tell me decisively which of the two is more beneficial.",
+        "translation_jp": "アルジュナは言った：クリシュナよ、あなたは行為の放棄を称賛し、再び献身をもって行為を行うことを称賛します。この二つのうち、どちらがより有益であるかを決定的に教えてください。",
+        "insights": "Arjuna once again asks a sincere and important question. He is caught on the horns of an apparent dilemma: should he renounce the world and action, or should he act with devotion? He sees these as two distinct paths and wants me to declare one as definitively superior. His plea for a 'su-nischitam'—a certain and decisive answer—shows he is ready to move beyond theoretical discussion to a practical conclusion. I will now resolve this apparent conflict for him once and for all, showing how the two are intimately related.",
+        "insights_jp": "アルジュナは再び、誠実で重要な質問をする。彼は見かけ上のジレンマに陥っている。つまり、世界と行動を放棄すべきか、それとも献身をもって行動すべきか。彼はこれらを二つの異なる道と見ており、どちらが決定的に優れているかを私に宣言してほしいと望んでいる。『ス・ニシュチタム』、つまり確実で決定的な答えを求めるこの嘆願は、彼が理論的な議論を超えて実践的な結論に進む準備ができていることを示している。私は今、この見かけ上の対立を彼のためにきっぱりと解決し、二つがどのように密接に関連しているかを示すだろう。"
+      },
+      "last_verse": {
+        "chapter": 5,
+        "verse": 29,
+        "text": "bhoktāraṁ yajña-tapasāṁ sarva-loka-maheśvaram suhṛdaṁ sarva-bhūtānāṁ jñātvā māṁ śāntim ṛchchhati",
+        "importance": 10,
+        "translation": "Having realized Me as the enjoyer of all sacrifices and austerities, the Supreme Lord of all the worlds, and the selfless friend of all living beings, My devotee attains peace.",
+        "translation_jp": "私をすべての供犠と苦行の享受者、すべての世界の至上主、そしてすべての生きとし生けるものの無私の友人であると認識して、私の献身者は平和を得る。",
+        "insights": "I conclude the chapter by revealing the ultimate formula for peace ('santim'). True, lasting peace is attained by one who knows Me in truth. They must know Me as the 'bhoktaram,' the supreme enjoyer of all 'yajna' (sacrifices) and 'tapasam' (austerities). They must know Me as the 'sarva-loka-mahesvaram,' the Supreme Lord of all planets and demigods. And they must know Me as the 'suhrdam sarva-bhutanam,' the selfless, loving friend and well-wisher of all living beings. When one understands My supreme position as the ultimate enjoyer, controller, and friend, all their anxieties cease, and they attain profound and lasting peace.",
+        "insights_jp": "私はこの章を、平和（『シャーンティム』）のための究極の公式を明らかにすることで締めくくる。真の、永続的な平和は、私を真実において知る者によって達成される。彼らは私を、すべての『ヤジュニャ』（犠牲）と『タパサーム』（苦行）の最高の享受者、『ボクターラム』として知らなければならない。彼らは私を、すべての惑星と半神の至高の主、『サルヴァ・ローカ・マヘーシュヴァラム』として知らなければならない。そして彼らは私を、すべての生きとし生けるものの無私で愛情深い友人であり、善意の支援者、『スフリダム・サルヴァ・ブーターナーム』として知らなければならない。人が、最高の享受者、制御者、そして友人としての私の至高の位置を理解するとき、彼らのすべての不安は止み、彼らは深遠で永続的な平和を得るのである。"
+      }
+    },
+    {
+      "chapter": 6,
+      "verse_count": 47,
+      "filename": "gita_ch06_combined.json",
+      "file_size_bytes": 106301,
+      "first_verse": {
+        "chapter": 6,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha anāśritaḥ karma-phalaṁ kāryaṁ karma karoti yaḥ sa saṁnyāsī cha yogī cha na niragnir na chākriyaḥ",
+        "importance": 10,
+        "translation": "The Supreme Lord said: One who performs his prescribed duty without depending on the fruits of his actions is a sannyasi (renunciate) and a yogi, not he who is without fire (does no sacrifices) and without action.",
+        "translation_jp": "至上主は言われた：行為の結果に依存せずに定められた義務を果たす者は、サニヤシ（放棄者）でありヨギである。火を持たず（供犠を行わず）行為をしない者ではない。",
+        "insights": "I begin by correcting a common misunderstanding. True renunciation is not the mere cessation of activity. The person who gives up lighting the sacrificial fire or ceases all work is not the real 'sannyasi' or 'yogi'. The true yogi is the one who performs their prescribed duty ('karyam karma') but is 'anasritah karma-phalam'—not dependent on the fruits of that action. Renunciation is an internal state of detachment, not an external show of inactivity. I want Arjuna to understand that he can be the truest kind of renunciant right there on the battlefield, simply by shifting his consciousness away from the results of his actions.",
+        "insights_jp": "私はまず、よくある誤解を訂正することから始める。真の放棄とは、単なる活動の停止ではない。供犠の火を灯すのをやめたり、すべての仕事をやめたりする者が、真の『サニヤシ』や『ヨギ』ではない。真のヨギとは、定められた義務（『カールヤム・カルマ』）を遂行するが、その行動の結果に依存しない（『アナーシュリタハ・カルマ・パラム』）者である。放棄とは内的な離欲の状態であり、非活動の外面的な見せかけではない。アルジュナに、彼がまさにその戦場で、単に意識を行動の結果から移すだけで、最も真実な種類の放棄者になれることを理解してほしいのだ。"
+      },
+      "last_verse": {
+        "chapter": 6,
+        "verse": 47,
+        "text": "yoginām api sarveṣāṁ mad-gatenāntarātmanā śraddhāvān bhajate yo māṁ sa me yuktatamo mataḥ",
+        "importance": 10,
+        "translation": "And of all yogis, theone with great faith who always abides in Me, thinks of Me within himself, and renders transcendental loving service to Me—he is the most intimately united with Me in yoga and is the highest of all. This is My opinion.",
+        "translation_jp": "そしてすべてのヨギの中で、偉大な信仰をもって常に私に宿り、自分自身の内側で私のことを考え、私に超越的な愛の奉仕を行う者—彼はヨーガにおいて私と最も親密に結合しており、すべての中で最も高い。これが私の意見である。",
+        "insights": "I conclude the entire chapter with a final, definitive statement, defining the highest of all yogis. Even among all types of yogis ('yoginam api sarvesam'), the one who is 'yuktatamah,' the most intimately united with Me, is the one who possesses a specific quality. They are 'sraddhavan,' full of faith. They 'bhajate yo mam,' worship Me with love and devotion. Their 'antaratmana,' their innermost self, is 'mad-gatena,' always abiding in Me, always thinking of Me. This yogi, the bhakti-yogi, who is united with Me through faith and loving service, is considered by Me ('me matah') to be the highest of all. This is My final opinion and the culmination of the path of yoga.",
+        "insights_jp": "私はこの章全体を、すべてのヨギの中で最も高い者を定義する、最後の、決定的な声明で締めくくる。すべての種類のヨギ（『ヨーギナーム・アピ・サルヴェーシャーム』）の中でも、『ユクタタマハ』、つまり私と最も親密に結合している者は、特定の資質を持つ者である。彼らは『シュラッダーヴァーン』、信仰に満ちている。彼らは『バジャテ・ヨー・マーム』、私を愛と献身をもって崇拝する。彼らの『アンタラートマナー』、つまりその最も内なる自己は、『マッド・ガテーナ』、常に私に宿り、常に私のことを考えている。このバクティ・ヨギ、信仰と愛情深い奉仕を通して私と結合しているヨギこそが、私によって（『メー・マタハ』）すべての中で最も高いと見なされる。これこそが私の最終的な意見であり、ヨーガの道の頂点なのである。"
+      }
+    },
+    {
+      "chapter": 7,
+      "verse_count": 30,
+      "filename": "gita_ch07_combined.json",
+      "file_size_bytes": 65385,
+      "first_verse": {
+        "chapter": 7,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha mayy āsakta-manāḥ pārtha yogaṁ yuñjan mad-āśrayaḥ asanśayaṁ samagraṁ māṁ yathā jñāsyasi tac chṛṇu",
+        "importance": 8,
+        "translation": "The Supreme Lord said: Now listen, O son of Pritha, how by practicing yoga in full consciousness of Me, with mind attached to Me, you can know Me in full, free from doubt.",
+        "translation_jp": "至上主は言われた：今聞きなさい、プリタの息子よ、私に心を付けて、私に避難してヨーガを実践することによって、どうすれば疑いなく私を完全に知ることができるか。",
+        "insights": "I now invite Arjuna to the next level of understanding. The key is to practice yoga 'mad-asrayah,' taking full refuge in Me, with the mind 'asakta-manah,' attached to Me. This isn't just a mechanical process; it is a relationship. If he can anchor his mind in Me and make Me his sole shelter, I promise he will 'jñāsyasi,' come to know Me 'samagram,' in full, 'asamsayam,' without any doubt. I am about to reveal knowledge of My own nature, My energies, and My relationship with the cosmos. This knowledge is only accessible through this yoga of loving attachment to Me.",
+        "insights_jp": "今、私はアルジュナを次の理解のレベルへと招待する。鍵は、'マッド・アシュラヤハ'、つまり私に完全に避難し、心を私に'アサクタ・マナハ'、つまり付けて、ヨーガを実践することだ。これは単なる機械的なプロセスではなく、関係性なのだ。もし彼が心を私に固定し、私を唯一の避難所とすることができれば、私は彼が'ジュニャースヤシ'、つまり私を'サマグラム'、完全に、'アサンシャヤム'、いかなる疑いもなく知るようになると約束する。私は今、私自身の性質、私のエネルギー、そして宇宙との私の関係に関する知識を明らかにしようとしている。この知識は、私への愛情深い執着のヨーガを通してのみアクセス可能なのである。"
+      },
+      "last_verse": {
+        "chapter": 7,
+        "verse": 30,
+        "text": "sādhibhūtādhidaivaṁ māṁ sādhiyajñaṁ cha ye viduḥ prayāṇa-kāle 'pi cha māṁ te vidur yukta-chetasaḥ",
+        "importance": 10,
+        "translation": "Those in full consciousness of Me, who know Me to be the one principle underlying the material manifestation, who know Me to be the Supersoul of all sacrifices, can understand and know Me, the Supreme Personality of Godhead, even at the time of death.",
+        "translation_jp": "私を完全に意識している者、物質的な顕現の根底にある唯一の原理として私を知っている者、すべての供犠の至上魂として私を知っている者は、死の時でさえ、私、至上主を理解し知ることができる。",
+        "insights": "I conclude the chapter with a profound statement about comprehensive knowledge. Those who know Me in full consciousness understand Me as the single principle underlying the 'adhibhuta' (the material manifestation), the 'adhidaiva' (all the demigods), and the 'adhiyajna' (all sacrifices). They see Me as the ultimate reality behind the physical world, the cosmic administration, and all religious rituals. Because their consciousness is 'yukta-chetasah,' fully absorbed in Me, they 'viduh,' know Me, 'prayana-kale 'pi ca,' even at the time of death. This complete, unwavering consciousness of Me at the final moment guarantees their liberation and their entrance into My eternal abode.",
+        "insights_jp": "私はこの章を、包括的な知識に関する深遠な声明で締めくくる。私を完全に意識している者たちは、私を、『アディブータ』（物質的な顕現）、『アディダイヴァ』（すべての半神）、そして『アディヤジュニャ』（すべての供犠）の根底にある単一の原理として理解している。彼らは私を、物理的な世界、宇宙の管理、そしてすべての宗教的儀式の背後にある究極の現実として見ている。彼らの意識は『ユクタ・チェータサハ』、つまり私に完全に没頭しているため、彼らは『ヴィドゥフ』、つまり私を、『プラヤーナ・カーレ・アピ・チャ』、つまり死の時でさえ、知っている。この最後の瞬間における、私に関する完全で揺るぎない意識こそが、彼らの解放と、私の永遠の住処への入場を保証するのである。"
+      }
+    },
+    {
+      "chapter": 8,
+      "verse_count": 28,
+      "filename": "gita_ch08_combined.json",
+      "file_size_bytes": 59858,
+      "first_verse": {
+        "chapter": 8,
+        "verse": 1,
+        "text": "arjuna uvācha kiṁ tad brahma kim adhyātmaṁ kiṁ karma puruṣottama adhibhūtaṁ cha kiṁ proktam adhidaivaṁ kim uchyate",
+        "importance": 10,
+        "translation": "Arjuna said: O my Lord, O Supreme Person, what is Brahman? What is the self? What is fruitive activity? What is this material manifestation? And what are the demigods? Please explain this to me.",
+        "translation_jp": "アルジュナは言った：我が主よ、至上なる方よ、ブラフマンとは何ですか？自己とは何ですか？果報的な活動とは何ですか？この物質的な顕現とは何ですか？そして半神とは何ですか？どうか私に説明してください。",
+        "insights": "Arjuna, having heard Me mention several profound terms at the end of the last chapter, now asks for their precise definitions. He wants to know about Brahman (the Absolute), the self, fruitive activity, the material manifestation, and the demigods. This is the mark of an intelligent student. He is not satisfied with vague concepts; he wants a clear understanding of the fundamental principles of existence. His questions are systematic and arise from a genuine desire to know the truth. This inquiry provides the perfect opportunity for me to explain these concepts and how they all relate to Me.",
+        "insights_jp": "アルジュナは、前の章の終わりに私が述べたいくつかの深遠な用語を聞いて、今、それらの正確な定義を求めている。彼はブラフマン（絶対者）、自己、果報的な活動、物質的な顕現、そして半神について知りたいのだ。これこそが知的な学生の証である。彼は曖昧な概念に満足せず、存在の基本原則を明確に理解したいと望んでいる。彼の質問は体系的であり、真理を知りたいという純粋な願望から生じている。この探求は、私がこれらの概念と、それらがすべて私とどのように関係しているかを説明する絶好の機会を与えてくれる。"
+      },
+      "last_verse": {
+        "chapter": 8,
+        "verse": 28,
+        "text": "vedeṣu yajñeṣu tapaḥsu chaiva dāneṣu yat puṇya-phalaṁ pradiṣṭam atyeti tat sarvam idaṁ viditvā yogī paraṁ sthānam upaiti chādyam",
+        "importance": 10,
+        "translation": "One who accepts the path of devotional service is not bereft of the results derived from studying the Vedas, performing austerities, practicing charity, or pursuing philosophical activities. At the end he reaches the supreme abode.",
+        "translation_jp": "献身的な奉仕の道を受け入れる者は、ヴェーダの研究、苦行の遂行、慈善の実践、あるいは哲学的な活動から得られる結果を奪われることはない。最後に彼は最高の住処に到達する。",
+        "insights": "I conclude the chapter with a final glorification of the path of Bhakti Yoga (devotional service). All the 'punya-phalam,' or pious results, that are promised from studying the Vedas, performing yajnas, undergoing tapas (austerities), and giving in charity—all these results are obtained by My devotee. But they get something more. The yogi who understands these teachings 'atyeti tat sarvam,' surpasses all those other results, and 'upaiti ca adyam param sthanam,' attains the supreme, original abode. Devotional service is so complete that it includes the benefits of all other spiritual paths, but it alone delivers the soul to the ultimate destination: My eternal, personal association.",
+        "insights_jp": "私はこの章を、バクティ・ヨーガ（献身的な奉仕）の道を最後に賛美することで締めくくる。ヴェーダの研究、ヤジュニャの遂行、タパス（苦行）の実践、そして慈善行為から約束されるすべての『プニヤ・パラム』、つまり敬虔な結果は、すべて私の献身者によって得られる。しかし、彼らはそれ以上のものを得る。これらの教えを理解するヨギは、『アティエーティ・タット・サルヴァム』、つまり他のすべての結果を超越し、『ウパイティ・チャ・アーディヤム・パラム・スターナム』、つまり至高の、本来の住処に到達する。献身的な奉仕は非常に完全であるため、他のすべての霊的な道の利益を含んでいるが、それだけが魂を究極の目的地、つまり私の永遠の、個人的な交友へと導くのである。"
+      }
+    },
+    {
+      "chapter": 9,
+      "verse_count": 34,
+      "filename": "gita_ch09_combined.json",
+      "file_size_bytes": 77073,
+      "first_verse": {
+        "chapter": 9,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha idaṁ tu te guhyatamaṁ pravakṣyāmy anasūyave jñānaṁ vijñāna-sahitaṁ yaj jñātvā mokṣyase 'śubhāt",
+        "importance": 9,
+        "translation": "The Supreme Lord said: My dear Arjuna, because you are never envious of Me, I shall impart to you this most secret wisdom, knowing which you shall be relieved of the miseries of material existence.",
+        "translation_jp": "至上主は言われた：我が愛するアルジュナよ、あなたが私を羨まないから、私はあなたにこの最も秘密の知恵を授けよう。それを知ることで、あなたは物質的存在の苦悩から解放されるだろう。",
+        "insights": "I am about to reveal to you, Arjuna, the 'guhyatamam,' the most secret wisdom. Why to you? Because you are 'anasuyave,' never envious of Me. You accept Me as I am, without envy or resentment, and this sincerity makes you the perfect recipient. This is not just theoretical knowledge ('jnanam'), but it is combined with realized truth ('vijnana'). The result of knowing this is liberation: 'moksyase 'subhat,' you shall be relieved of all the miseries of this inauspicious material existence. This knowledge is a great treasure, and it can only be entrusted to one who is pure of heart and free from envy.",
+        "insights_jp": "私は今、アルジュナよ、あなたに『グヒヤタマム』、つまり最も秘密の知恵を明らかにしようとしている。なぜあなたになのか？なぜなら、あなたは『アナスーヤヴェ』、つまり決して私を羨まないからだ。あなたは、羨望や恨みなく、ありのままの私を受け入れる。この誠実さが、あなたを完璧な受け手にするのだ。これは単なる理論的な知識（『ジュニャーナム』）ではなく、実現された真理（『ヴィジュニャーナム』）と結びついている。これを知ることの結果は解放である。『モークシャセー・アシュバート』、あなたはこの不吉な物質的存在のすべての苦悩から解放されるだろう。この知識は偉大な宝であり、心が純粋で、羨望から解放された者にのみ託すことができる。"
+      },
+      "last_verse": {
+        "chapter": 9,
+        "verse": 34,
+        "text": "man-manā bhava mad-bhakto mad-yājī māṁ namaskuru mām evaiṣyasi yuktvaivam ātmānaṁ mat-parāyaṇaḥ",
+        "importance": 10,
+        "translation": "Engage your mind always in thinking of Me, become My devotee, offer obeisance to Me and worship Me. Being completely absorbed in Me, surely you will come to Me.",
+        "translation_jp": "常に私を考えることに心を向け、私の献身者となり、私に敬意を払い、私を崇拝しなさい。私に完全に没頭すれば、確かにあなたは私に来るだろう。",
+        "insights": "I conclude the chapter with the four essential practices of pure devotional service. This is the essence of the most secret wisdom. First, 'man-mana bhava,' always engage your mind in thinking of Me. Second, 'mad-bhakto,' become My devotee. Third, 'mad-yaji,' worship Me and offer everything to Me. And fourth, 'mam namaskuru,' offer your obeisances to Me. I promise that by being 'yuktvaivam,' thus absorbed in Me, and making Me your 'mat-parayanah,' your supreme refuge, 'mam evaisyasi,' you will surely come to Me. This is the simple, direct, and guaranteed process for returning to My eternal abode.",
+        "insights_jp": "私はこの章を、純粋な献身的な奉仕の四つの不可欠な実践で締めくくる。これこそが、最も秘密の知恵の本質である。第一に、『マン・マナー・バヴァ』、常に私を考えることに心を向けなさい。第二に、『マッド・バクトー』、私の献身者となりなさい。第三に、『マッド・ヤージー』、私を崇拝し、すべてを私に捧げなさい。そして第四に、『マーム・ナマスクル』、私に敬意を払いなさい。私は約束する。『ユクトヴァイヴァム』、つまりこのように私に没頭し、私をあなたの『マット・パラーヤナハ』、つまり最高の避難所とすることによって、『マーム・エーヴァイシャシ』、あなたは確かに私に来るだろう。これこそが、私の永遠の住処に戻るための、単純で、直接的で、そして保証されたプロセスなのである。"
+      }
+    },
+    {
+      "chapter": 10,
+      "verse_count": 42,
+      "filename": "gita_ch10_combined.json",
+      "file_size_bytes": 93345,
+      "first_verse": {
+        "chapter": 10,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha bhūya eva mahā-bāho śṛṇu me paramaṁ vachaḥ yat te 'haṁ prīyamāṇāya vakṣyāmi hita-kāmyayā",
+        "importance": 8,
+        "translation": "The Supreme Lord said: Listen again, O mighty-armed Arjuna. Because you are My dear friend, for your benefit I shall speak to you further, giving knowledge that is better than what I have already explained.",
+        "translation_jp": "至上主は言われた：再び聞きなさい、強大な腕を持つアルジュナよ。あなたは私の親愛なる友人であるから、あなたのためにさらに語ろう。すでに説明した知識よりも優れた知識を与えよう。",
+        "insights": "Having seen Arjuna's eagerness to hear, I wish to continue. I address him as 'maha-baho' (mighty-armed) to remind him of his strength, but I tell him that my reason for speaking is because he is 'priyamanaya'—very dear to Me. My words are not a dry philosophical lecture; they are an expression of love. Because he is My friend and takes pleasure in hearing from Me, I will speak for his 'hita-kamyaya,' for his ultimate benefit. I will reveal knowledge that is even 'paramam,' more supreme, than what I have already explained, helping him to fix his mind on Me through loving remembrance.",
+        "insights_jp": "アルジュナの聞く意欲を見て、私は続けたいと思う。私は彼を『マハー・バーホー』（強大な腕を持つ者）と呼び、彼の強さを思い出させるが、私が話す理由は、彼が私にとって非常に愛しい『プリーヤマーナーヤ』だからだと告げる。私の言葉は乾いた哲学の講義ではない。それは愛の表現なのだ。彼は私の友人であり、私の話を聞くことに喜びを感じるので、私は彼の『ヒタ・カーミヤヤー』、つまり究極の利益のために語るだろう。私は、すでに説明したものよりもさらに『パラマム』、至高の知識を明らかにし、彼が愛情深い記憶を通して私に心を固定するのを助けるだろう。"
+      },
+      "last_verse": {
+        "chapter": 10,
+        "verse": 42,
+        "text": "athavā bahunaitena kiṁ jñātena tavārjuna viṣṭabhyāham idaṁ kṛtsnam ekāṁśena sthito jagat",
+        "importance": 10,
+        "translation": "But what need is there, Arjuna, for all this detailed knowledge? With a single fragment of Myself I pervade and support this entire universe.",
+        "translation_jp": "しかし、アルジュナよ、これらすべての詳細な知識に何が必要だろうか？私自身の一片をもって、私はこの宇宙全体に遍満し、支えている。",
+        "insights": "I conclude My discourse on opulences by showing how, in one sense, all this detailed knowledge is unnecessary. I ask, 'But what need is there, Arjuna, for all this detailed knowledge?' While it can help one to remember Me, there is a simpler, more profound truth. 'Vistabhyaham idam krtsnam ekamsena sthito jagat'—'With a single fragment of Myself, I pervade and support this entire universe.' The entire cosmic manifestation, with its countless galaxies and universes, is sustained by just one tiny spark of My personal splendor. If he can just grasp this single, staggering truth, then he will have understood My truly infinite and inconceivable position.",
+        "insights_jp": "私は、ある意味で、これらすべての詳細な知識が、いかに不必要であるかを示すことによって、豊かさに関する私の談話を締めくくる。私は問う、『しかし、アルジュナよ、これらすべての詳細な知識に、何の必要があるというのか？』と。それは人が私を思い出すのを助けることができるが、より単純で、より深遠な真理がある。『ヴィシュタビヤーハム・イダム・クリツナム・エーカーンシェーナ・スティトー・ジャガット』――『私自身の一片をもって、私はこの宇宙全体に遍満し、支えている』。数え切れないほどの銀河と宇宙を持つ全宇宙の顕現は、私の個人的な輝きの、ほんの小さな火花一つによって維持されているのだ。もし彼が、このたった一つの、驚異的な真理を把握できさえすれば、そのとき、彼は私の真に無限で、不可解な立場を理解したことになるだろう。"
+      }
+    },
+    {
+      "chapter": 11,
+      "verse_count": 55,
+      "filename": "gita_ch11_combined.json",
+      "file_size_bytes": 129958,
+      "first_verse": {
+        "chapter": 11,
+        "verse": 1,
+        "text": "arjuna uvācha madanugrahāya paramaṁ guhyam adhyātma-saṁjñitam yat tvayoktaṁ vachas tena moho 'yaṁ vigato mama",
+        "importance": 10,
+        "translation": "Arjuna said: Having heard the supremely confidential spiritual knowledge, which You have revealed out of compassion for me, my illusion is now dispelled.",
+        "translation_jp": "アルジュナは言った：あなたが私への憐れみから啓示された、至高に秘密の霊的な知識を聞いて、私の妄想は今や晴れました。",
+        "insights": "Arjuna's words fill Me with joy. He confirms that the 'guhyam adhyatma-samjnitam,' the confidential spiritual knowledge I have shared, has worked its magic. His statement, 'moho 'yam vigato mama'—'my illusion is now dispelled'—is the first sign of his healing. My words, spoken out of compassion for him, have begun to cut through the fog of his grief and attachment. He is beginning to understand his true identity and My supreme position. This dispelling of illusion is the essential first step before one can be granted a higher, divine vision. He is now prepared to see a truth beyond the reach of ordinary senses.",
+        "insights_jp": "アルジュナの言葉は私を喜びに満たす。彼は、私が分かち合った『グヒャム・アディヤートマ・サンジュニタム』、つまり秘密の霊的な知識が、その魔法を働かせたことを確認している。彼の声明、『モーホー・アヤム・ヴィガトー・ママ』――『私の妄想は今や晴れました』――は、彼の癒しの最初のしるしだ。彼への憐れみから語られた私の言葉が、彼の悲しみと執着の霧を切り開き始めている。彼は、自身の真のアイデンティティと私の至高の立場を理解し始めている。この妄想の払拭こそが、人がより高次の、神聖なビジョンを授かる前に不可欠な第一歩なのだ。彼は今、普通の感覚の届かない真理を見る準備ができている。"
+      },
+      "last_verse": {
+        "chapter": 11,
+        "verse": 55,
+        "text": "mat-karma-kṛn mat-paramo mad-bhaktaḥ saṅga-varjitaḥ nirvairaḥ sarva-bhūteṣu yaḥ sa mām eti pāṇḍava",
+        "importance": 10,
+        "translation": "My dear Arjuna, he who engages in My pure devotional service, free from the contaminations of past activities and mental speculation, who works for Me, who makes Me the supreme goal of his life, and who is friendly to every living being—he certainly comes to Me.",
+        "translation_jp": "我が愛するアルジュナよ、私の純粋な献身的な奉仕に従事し、過去の活動や精神的な推測の汚染から解放され、私のために働き、私を人生の至高の目標とし、すべての生きとし生けるものに友好的である者—彼は確かに私に来る。",
+        "insights": "I conclude the entire chapter and the revelation of the universal form with this verse, which is the essence of the entire Bhagavad-gita. To attain Me, one must become 'mat-karma-krt' (one who works for Me), 'mat-paramo' (one who considers Me the supreme goal), and 'mad-bhaktah' (My devotee). They must be 'sanga-varjitah' (free from all material attachments) and 'nirvairah sarva-bhutesu' (friendly and without enmity towards all living beings). The person who lives in this way—working for Me, dedicated to Me, devoted to Me, detached, and friendly to all—'sah mam eti,' he certainly comes to Me. This is the complete formula for perfection.",
+        "insights_jp": "私はこの章全体と、普遍的な姿の啓示を、全バガヴァッド・ギーターの本質である、この詩で締めくくる。私に到達するためには、人は『マット・カルマ・クリット』（私のために働く者）、『マット・パラモー』（私を最高の目標と見なす者）、そして『マッド・バクタハ』（私の献身者）にならなければならない。彼らは、『サンガ・ヴァルジタハ』（すべての物質的な執着から解放され）、そして『ニルヴァイラハ・サルヴァ・ブーテーシュ』（すべての生きとし生けるものに対して友好的で、敵意がない）でなければならない。このように生きる人、つまり私のために働き、私に献身し、私に専心し、離欲し、そしてすべてに友好的である人、『サハ・マーム・エーティ』、彼は確かに私に来る。これこそが、完成のための完全な公式なのである。"
+      }
+    },
+    {
+      "chapter": 12,
+      "verse_count": 20,
+      "filename": "gita_ch12_combined.json",
+      "file_size_bytes": 45851,
+      "first_verse": {
+        "chapter": 12,
+        "verse": 1,
+        "text": "arjuna uvācha evaṁ satata-yuktā ye bhaktās tvāṁ paryupāsate ye chāpy akṣaram avyaktaṁ teṣāṁ ke yoga-vittamāḥ",
+        "importance": 10,
+        "translation": "Arjuna inquired: Among those who are constantly engaged in Your devotional service and those who worship the impersonal Brahman, which is considered to be more perfect?",
+        "translation_jp": "アルジュナは尋ねた：あなたの献身的な奉仕に絶えず従事している者と、非人格的なブラフマンを崇拝する者のうち、どちらがより完璧であると考えられていますか？",
+        "insights": "Arjuna asks a pivotal question that gets to the very heart of spiritual practice. He wants to know which path is superior: the path of the 'bhaktas' who are 'satata-yuktah,' always engaged in worshiping My personal form, or the path of those who worship the 'aksaram avyaktam,' the imperishable, unmanifested Brahman. This is a classic spiritual debate. Is it better to love a personal God with form, color, and attributes, or to meditate on the formless, all-pervading Absolute? His question is clear and direct, and it allows Me to explicitly state My preference and explain the practical realities of these two distinct spiritual approaches.",
+        "insights_jp": "アルジュナは、霊的実践のまさに核心に触れる、極めて重要な質問をする。彼は、どの道が優れているのかを知りたがっている。つまり、『サタタ・ユクターハ』、常に私の人格的な姿を崇拝することに従事している『バクタ』の道か、それとも『アクシャラム・アヴィヤクタム』、不滅で未顕現のブラフマンを崇拝する者の道か。これこそが、古典的な霊的論争だ。姿、色、そして属性を持つ人格的な神を愛する方が良いのか、それとも姿のない、遍満する絶対者を瞑想する方が良いのか？彼の質問は明確で直接的であり、それによって私は、私の好みを明確に述べ、これら二つの異なる霊的アプローチの実践的な現実を説明することができる。"
+      },
+      "last_verse": {
+        "chapter": 12,
+        "verse": 20,
+        "text": "ye tu dharmāmṛtam idaṁ yathoktaṁ paryupāsate śraddadhānā mat-paramā bhaktās te 'tīva me priyāḥ",
+        "importance": 10,
+        "translation": "Those who follow this imperishable path of devotional service and who completely engage themselves with faith, making Me the supreme goal, are very, very dear to Me.",
+        "translation_jp": "この不滅の献身的な奉仕の道をたどり、私を至高の目標として信仰をもって完全に専念する者たちは、私にとって非常に、非常に愛しい。",
+        "insights": "I conclude the chapter with a final, emphatic declaration. Those who faithfully follow this 'dharmamrtam,' this immortal nectar of dharma or the eternal path of devotional service, as I have just described it; those who are 'sraddadhanah,' full of faith; and those who make Me their 'mat-paramah,' their supreme goal—such 'bhaktas,' devotees, 'te 'tiva me priyah,' are very, very dear to Me. This is the ultimate conclusion. While all who approach Me are dear, those who engage in this process of pure, faithful devotional service, making Me their ultimate aim, are the most beloved of all.",
+        "insights_jp": "私はこの章を、最後の、強調的な宣言で締めくくる。私がたった今描写したように、この『ダルマームリタム』、つまりこの不滅のダルマの甘露、または永遠の献身的な奉仕の道を忠実にたどる者たち、'シュラッダダーナーハ'、信仰に満ちている者たち、そして私を彼らの'マット・パラマーハ'、最高の目標とする者たち――そのような'バクターハ'、献身者たちは、'テ・アティーヴァ・メー・プリヤーハ'、私にとって非常に、非常に愛しい。これこそが、究極の結論である。私に近づく者は皆、愛しいが、この純粋で、忠実な献身的な奉仕のプロセスに従事し、私を究極の目標とする者たちこそが、すべての中で最も愛されているのである。"
+      }
+    },
+    {
+      "chapter": 13,
+      "verse_count": 34,
+      "filename": "gita_ch13_combined.json",
+      "file_size_bytes": 76730,
+      "first_verse": {
+        "chapter": 13,
+        "verse": 1,
+        "text": "arjuna uvācha prakṛtiṁ puruṣaṁ chaiva kṣetraṁ kṣetrajñam eva cha etad veditum ichchhāmi jñānaṁ jñeyaṁ cha keśava",
+        "importance": 10,
+        "translation": "Arjuna said: O Kesava (Krishna), I wish to understand what are prakriti (nature) and purusha (the enjoyer), and what are kshetra (the field) and kshetrajna (the knower of the field). I also wish to know what is true knowledge, and what is the goal of this knowledge?",
+        "translation_jp": "アルジュナは言った：ケーシャヴァ（クリシュナ）よ、私はプラクリティ（自然）とプルシャ（享受者）とは何か、そしてクシェートラ（場）とクシェートラジュニャ（場を知る者）とは何かを理解したい。また、真の知識とは何か、そしてこの知識の目標とは何かを知りたいのですか？",
+        "insights": "Arjuna, My dear friend, asks a series of profound philosophical questions. He wishes to understand nature and the enjoyer of nature, the field of activities and its knower, and finally, knowledge and the object of knowledge. This systematic inquiry shows that his mind is no longer clouded by emotional grief but is now prepared for a deep, analytical understanding of reality. His questions perfectly set the stage for this chapter, which is a detailed discourse on the distinction between matter and spirit. He is asking for the very knowledge that cuts the knot of material entanglement. I will gladly illuminate these subjects for him.",
+        "insights_jp": "我が愛する友、アルジュナは、一連の深遠な哲学的質問をする。彼は、自然とその享受者、活動の場とその知者、そして最後に、知識と知識の対象について理解したいと願っている。この体系的な探求は、彼の心がもはや感情的な悲しみに曇らされておらず、今や現実の深い、分析的な理解の準備ができていることを示している。彼の質問は、この章、つまり物質と霊の区別に関する詳細な談話のための、完璧な舞台を設定する。彼は、物質的な絡み合いの結び目を断ち切る、まさにその知識を求めているのだ。私は、喜んで彼のためにこれらの主題を照らし出すだろう。"
+      },
+      "last_verse": {
+        "chapter": 13,
+        "verse": 34,
+        "text": "kṣetra-kṣetrajñayor evam antaraṁ jñāna-chakṣuṣā bhūta-prakṛti-mokṣaṁ cha vidur yānti te param",
+        "importance": 10,
+        "translation": "Those who see with knowledge the difference between the body and the knower of the body and can also understand the process of liberation from bondage in material nature, attain to the supreme goal.",
+        "translation_jp": "知識をもって体と体を知る者の違いを見ることができ、物質的性質における束縛からの解放のプロセスも理解できる者たちは、最高の目標に到達する。",
+        "insights": "I conclude the chapter by summarizing the result of this knowledge. Those who see, 'jnana-chaksusa,' with the eyes of knowledge, the 'antaram,' the difference, between the 'ksetra,' the field (body), and the 'ksetrajna,' the knower of the field (soul); and who also understand the 'bhuta-prakrti-moksam,' the process of liberation from material nature—'te param yanti,' 'they attain the supreme goal.' This is the culmination. True knowledge is to see the distinction between body and soul and to understand the process of liberation. One who achieves this vision is assured of attaining the supreme, transcendental destination.",
+        "insights_jp": "私はこの章を、この知識の結果を要約することで締めくくる。『ジュニャーナ・チャクシュサー』、つまり知識の目をもって、『クシェートラ』、場（身体）と、『クシェートラジュニャ』、場の知者（魂）との間の、『アンタラム』、違いを見、そしてまた、『ブータ・プラクリティ・モークシャム』、つまり物質的自然からの解放のプロセスを理解する者たち、『テー・パラム・ヤーンティ』、彼らは最高の目標に到達する。これこそが、頂点なのである。真の知識とは、身体と魂の区別を見、そして解放のプロセスを理解することである。このビジョンを達成する者は、最高の、超越的な目的地に到達することが、保証されている。"
+      }
+    },
+    {
+      "chapter": 14,
+      "verse_count": 27,
+      "filename": "gita_ch14_combined.json",
+      "file_size_bytes": 61075,
+      "first_verse": {
+        "chapter": 14,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha paraṁ bhūyaḥ pravakṣyāmi jñānānāṁ jñānam uttamam yaj jñātvā munayaḥ sarve parāṁ siddhim ito gatāḥ",
+        "importance": 8,
+        "translation": "The Supreme Lord said: Again I shall declare to you this supreme wisdom, the best of all knowledge, knowing which all the sages have attained to supreme perfection after this life.",
+        "translation_jp": "至上主は言われた：再びあなたにこの至高の知恵、すべての知識の中で最も優れたものを宣言しよう。それを知ることで、すべての賢者たちはこの人生の後に最高の完成に到達した。",
+        "insights": "I will now speak again, sharing with you the 'jnanam uttamam,' the supreme wisdom, the best of all knowledge. I am doing this because I see your sincere desire to know. This is the knowledge that has enabled 'munayah sarve,' all the great sages of the past, to attain 'param siddhim,' supreme perfection, after their time in this world was over. By calling it the 'best of all knowledge,' I am emphasizing its power to grant the ultimate liberation, which is the goal sought by all wise persons. Listen carefully, for this knowledge is the direct key to perfection.",
+        "insights_jp": "今、私は再び語ろう。あなたに『ジュニャーナム・ウッタマム』、至高の知恵、すべての知識の中で最も優れたものを分かち合おう。私がこうするのは、あなたの知りたいという誠実な願望を見ているからだ。これこそが、過去のすべての偉大な賢者たち、『ムナヤハ・サルヴェー』が、この世での時を終えた後、『パラム・シッディム』、最高の完成を達成することを可能にした知識なのだ。『すべての知識の中で最も優れた』と呼ぶことで、私は、すべての賢者が求める目標である、究極の解放を授けるその力を強調している。注意深く聞きなさい。なぜなら、この知識こそが、完成への直接的な鍵だからだ。"
+      },
+      "last_verse": {
+        "chapter": 14,
+        "verse": 27,
+        "text": "brahmaṇo hi pratiṣṭhāham amṛtasyāvyayasya cha śāśvatasya cha dharmasya sukhasyaikāntikasya cha",
+        "importance": 10,
+        "translation": "And I am the basis of the impersonal Brahman, which is immortal, imperishable, eternal and is the constitutional position of ultimate happiness.",
+        "translation_jp": "そして私は非人格的なブラフマンの基盤であり、それは不死であり、不滅であり、永遠であり、究極の幸福の本来の立場である。",
+        "insights": "I conclude by revealing My own position as the source of even the impersonal Brahman. 'Brahmano hi pratisthaham'—'And I am the basis, the foundation, of that impersonal Brahman.' That Brahman is described as 'amrtasya,' immortal, 'avyayasya,' imperishable, 'sasvatasya dharmasya,' the basis of eternal constitutional duty, and 'sukhasyaikantikasya,' the basis of ultimate, absolute happiness. Many yogis strive to merge into the light of the impersonal Brahman, but here I reveal that I, the Supreme Person, am the source and foundation of that spiritual light. Therefore, taking shelter of Me, the source, is the most complete form of spiritual realization.",
+        "insights_jp": "私は、私自身が非人格的なブラフマンでさえもその源であるという、私の立場を明らかにすることによって、締めくくる。『ブラフマノー・ヒ・プラティシュターハム』――『そして私は、その非人格的なブラフマンの基盤、基礎である』。そのブラフマンは、『アムリタスヤ』、不滅であり、『アヴィヤヤスヤ』、不滅であり、『シャイシュヴァタスヤ・ダルマスヤ』、永遠の構成的な義務の基盤であり、そして『スカシャイカーンティカスヤ』、究極の、絶対的な幸福の基盤であると、描写されている。多くのヨギが、非人格的なブラフマンの光の中に融合しようと努力するが、ここで私は、私、至高の人格こそが、その霊的な光の源であり、基礎であることを、明らかにする。したがって、源である私に避難することこそが、霊的な実現の、最も完全な形態なのである。"
+      }
+    },
+    {
+      "chapter": 15,
+      "verse_count": 20,
+      "filename": "gita_ch15_combined.json",
+      "file_size_bytes": 46822,
+      "first_verse": {
+        "chapter": 15,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha ūrdhva-mūlam adhaḥ-śākham aśvatthaṁ prāhur avyayam chandāṁsi yasya parṇāni yas taṁ veda sa veda-vit",
+        "importance": 10,
+        "translation": "The Supreme Personality of Godhead said: There is a banyan tree which has its roots upward and its branches down, and whose leaves are the Vedic hymns. One who knows this tree is the knower of the Vedas.",
+        "translation_jp": "至上人格神は言われた：上方に根を張り、下方に枝を広げるバニヤン樹がある。その葉はヴェーダの賛歌である。この樹を知る者はヴェーダを知る者である。",
+        "insights": "I begin this chapter with a powerful metaphor to explain the nature of this material world. It is like an 'asvattham,' a banyan tree, but it is 'urdhva-mulam,' with its roots upward, and 'adhah-sakham,' its branches growing downward. The roots are upward because its origin is in the spiritual world, in Me. The branches grow downward into the material realm of action and consequence. The leaves of this tree are the Vedic hymns, which nourish and sustain it through religious rituals. One who knows the nature of this tree—its origin, its function, and how it entangles—is a true 'veda-vit,' a knower of the Vedas' ultimate purpose.",
+        "insights_jp": "私はこの章を、この物質世界の性質を説明するための強力な比喩から始める。それは『アシュヴァッタム』、つまりガジュマルの木のようであるが、『ウールドゥヴァ・ムーラム』、つまりその根は上向きであり、『アダハ・シャーカム』、その枝は下向きに伸びている。その根が上向きなのは、その起源が霊的世界、つまり私の中にあるからだ。枝は、行動と結果の物質的な領域へと下向きに伸びていく。この木の葉はヴェーダの賛歌であり、宗教的な儀式を通してそれを養い、維持している。この木の性質、つまりその起源、その機能、そしてそれがどのようにして絡め取るかを理解する者こそが、真の『ヴェーダ・ヴィット』、ヴェーダの究極の目的を知る者なのである。"
+      },
+      "last_verse": {
+        "chapter": 15,
+        "verse": 20,
+        "text": "iti guhyatamaṁ śāstram idam uktaṁ mayānagha etad buddhvā buddhimān syāt kṛta-kṛtyaś cha bhārata",
+        "importance": 10,
+        "translation": "This is the most confidential part of the Vedic scriptures, O sinless one, and it is disclosed now by Me. Whoever understands this will become wise, and his endeavors will know perfection.",
+        "translation_jp": "これはヴェーダ聖典の最も秘密の部分である、罪なき者よ。そしてそれは今私によって開示される。これを理解する者は賢者となり、彼の努力は完全を知るだろう。",
+        "insights": "I conclude the chapter by summarizing the importance of this knowledge. 'Iti guhyatamam sastram idam,' 'This is the most confidential part of the Vedic scriptures,' which 'uktam mayanagha,' has now been disclosed by Me, O sinless one. 'Etad buddhva,' by understanding this, one 'buddhiman syat,' becomes truly wise. And 'krta-krtyas ca,' their endeavors will know perfection; their life's mission becomes fulfilled. This knowledge of Me as the Supreme Person, Purusottama, is the ultimate secret of the Vedas. Understanding it brings true wisdom, and the application of that wisdom in My service brings ultimate success and fulfillment to one's life.",
+        "insights_jp": "私はこの章を、この知識の重要性を要約することによって、締めくくる。『イティ・グヒヤタマム・シャーストラム・イダム』、『これこそが、ヴェーダ聖典の、最も秘密の部分である』。それは、『ウクタム・マヤーナガ』、今、私によって開示された、おお、罪なき者よ。『エータッド・ブッドヴァー』、これを理解することによって、人は、『ブッディマーン・スィヤート』、真に賢くなる。そして、『クリタ・クリティアシュ・チャ』、その人の努力は、完全を知るだろう。その人の人生の使命は、果たされるのだ。私を、至高の人格、プルショーッタマとして知るこの知識こそが、ヴェーダの、究極の秘密なのである。それを理解することは、真の知恵をもたらし、そしてその知恵を、私の奉仕において応用することは、人の人生に、究極の成功と、充足を、もたらす。"
+      }
+    },
+    {
+      "chapter": 16,
+      "verse_count": 24,
+      "filename": "gita_ch16_combined.json",
+      "file_size_bytes": 53916,
+      "first_verse": {
+        "chapter": 16,
+        "verse": 1,
+        "text": "śrī-bhagavān uvācha abhayaṁ sattva-saṁśuddhir jñāna-yoga-vyavasthitiḥ dānaṁ damaś cha yajñaś cha svādhyāyas tapa ārjavam",
+        "importance": 10,
+        "translation": "The Supreme Personality of Godhead said: Fearlessness, purification of one's existence, cultivation of spiritual knowledge, charity, self-control, performance of sacrifice, study of the Vedas, austerity and simplicity.",
+        "translation_jp": "至上人格神は言われた：恐れなさ、存在の浄化、霊的知識の修養、慈善、自己制御、供犠の遂行、ヴェーダの学習、苦行、そして単純さ。",
+        "insights": "I begin by clearly delineating the two fundamental natures of beings in this world. First, I list the 'sampadam daivim,' the transcendental qualities that belong to godly men. These are not ordinary virtues but signs of a purified existence. They include fearlessness, purity, cultivation of spiritual knowledge, charity, self-control, performance of sacrifice, study of the Vedas, austerity, and simplicity. These qualities are the wealth of a divine nature, the pathway that leads the soul toward liberation and a return to Me. They are the symptoms of a consciousness aligned with spiritual truth.",
+        "insights_jp": "私はまず、この世の存在の二つの基本的な性質を明確に線引きすることから始める。第一に、私は『サンパダム・ダイヴィム』、つまり敬虔な人々に属する超越的な資質を列挙する。これらは普通の徳ではなく、浄化された存在のしるしだ。それらには、恐れ知らず、純粋さ、霊的知識の修養、慈善、自己制御、供犠の遂行、ヴェーダの学習、苦行、そして単純さが含まれる。これらの資質こそが、神聖な性質の富であり、魂を解放と私への帰還へと導く道なのだ。それらは、霊的真理に沿った意識の症状なのである。"
+      },
+      "last_verse": {
+        "chapter": 16,
+        "verse": 24,
+        "text": "tasmāt śāstraṁ pramāṇaṁ te kāryākārya-vyavasthitau jñātvā śāstra-vidhānoktaṁ karma kartum ihārhasi",
+        "importance": 10,
+        "translation": "One should therefore understand what is duty and what is not duty by the regulations of the scriptures. Knowing such rules and regulations, one should act so that he may gradually be elevated.",
+        "translation_jp": "したがって、人は聖典の規制によって何が義務であり、何が義務でないかを理解すべきである。そのような規則と規制を知って、人は徐々に高められるように行動すべきである。",
+        "insights": "I conclude the chapter with a final, definitive instruction. 'Tasmat,' therefore, the 'sastram,' the scripture, should be your 'pramanam,' your authority, in determining 'karyakarya-vyavasthitau,' what is duty and what is not duty. One cannot decide this based on personal opinion or popular vote. The standard is the revealed scripture. 'Jnatva,' having known, the 'sastra-vidhanoktam,' the rules and regulations as stated in the scriptures, one 'arhasi,' should, 'kartum iha karma,' perform one's work in this world accordingly. This is the only way one can be gradually elevated and act in a way that is beneficial for oneself and for everyone.",
+        "insights_jp": "私は、最後の、決定的な指示をもって、この章を、締めくくる。『タスマーット』、したがって、『シャーストラム』、聖典こそが、『カーリヤーカールヤ・ヴィヤヴァスティタウ』、つまり何が義務であり、何が義務でないかを、決定する際に、あなたの『プラマーナム』、権威であるべきなのだ。人は、個人的な意見や、人気投票に基づいて、これを決定することはできない。基準は、明らかにされた聖典なのである。『ジュニャートヴァー』、つまり聖典に述べられている、『シャーストラ・ヴィダーノークタム』、規則と規制を、知った上で、人は、『アルハシ』、つまり、この世で、自分の仕事を、それに応じて、『カルトゥム・イハ・カルマ』、遂行すべきである。これこそが、人が、徐々に高められ、そして自分自身と、すべての人にとって、有益な方法で、行動することができる、唯一の方法なのである。"
+      }
+    },
+    {
+      "chapter": 17,
+      "verse_count": 28,
+      "filename": "gita_ch17_combined.json",
+      "file_size_bytes": 61734,
+      "first_verse": {
+        "chapter": 17,
+        "verse": 1,
+        "text": "arjuna uvācha ye śāstra-vidhim utsṛjya yajante śraddhayānvitāḥ teṣāṁ niṣṭhā tu kā kṛṣṇa sattvam āho rajas tamaḥ",
+        "importance": 10,
+        "translation": "Arjuna inquired: O Kṛṣṇa, what is the situation of those who do not follow the principles of scripture but worship according to their own imagination? Are they in goodness, passion or ignorance?",
+        "translation_jp": "アルジュナは尋ねた：クリシュナよ、聖典の原則に従わず、自分自身の想像に従って崇拝する者たちの状況は何ですか？彼らは善性、情熱、あるいは無知の中にいるのですか？",
+        "insights": "Arjuna asks a very practical and important question. What about those who don't follow the 'sastra-vidhim' (rules of scripture) but still worship with 'sraddhaya,' or faith? He wants to know their 'nistha,' their position or standing. Is their faith in goodness, passion, or ignorance? This question addresses the reality that many people have some innate faith but may not have access to or knowledge of the detailed scriptural injunctions. His inquiry allows Me to explain that faith itself is not a monolithic concept; it takes on the color of one's inherent nature, which is shaped by the three modes.",
+        "insights_jp": "アルジュナは非常に実践的で重要な質問をする。『シャーストラ・ヴィディム』（聖典の規則）に従わず、それでも『シュラッダーヤー』、つまり信仰をもって崇拝する者たちはどうなるのか？彼は彼らの『ニシュター』、つまり立場または地位を知りたがっている。彼らの信仰は善性、情熱、あるいは無知の中にあるのか？この質問は、多くの人々が生来の信仰を持っているが、詳細な聖典の命令にアクセスしたり、知識を持っていなかったりする現実に取り組んでいる。彼の探求は、信仰自体が単一の概念ではなく、三つの様式によって形作られる人の生来の性質の色を帯びることを、私に説明させることを可能にする。"
+      },
+      "last_verse": {
+        "chapter": 17,
+        "verse": 28,
+        "text": "aśraddhayā hutaṁ dattaṁ tapas taptaṁ kṛtaṁ cha yat asad ity uchyate pārtha na cha tat pretya no iha",
+        "importance": 10,
+        "translation": "Anything done as sacrifice, penance or charity without faith—be it for the time being or for all time—is useless in this life and the next.",
+        "translation_jp": "信仰心なく供犠、苦行、あるいは慈善として行われたものは何であれ—それが一時的なものであろうと永遠のものであろうと—この人生でも来世でも無益である。",
+        "insights": "I conclude the chapter with a final, stark warning about the importance of faith. 'Asraddhaya,' without faith, anything that is done—'hutam' (sacrifice), 'dattam' (charity), 'tapas taptam' (austerity performed), or any 'krtam,' other action—is called 'asat,' or unreal and useless. It has no spiritual value. 'Na ca tat pretya no iha'—'It is of no use in this life or the next.' Without faith in the Supreme and the scriptural process, even apparently pious acts are fruitless. Faith is the essential ingredient that transforms a material action into a spiritual one. Without it, all our endeavors are ultimately in vain.",
+        "insights_jp": "私は、信仰の重要性に関する、最後の、厳しい警告をもって、この章を、締めくくる。『アシュラッダーヤー』、つまり信仰なくして、行われるものは何であれ――『フタム』（供犠）、『ダッタム』（慈善）、『タパス・タプタム』（行われた苦行）、あるいは、いかなる『クリタム』、他の行動も――『アサット』、つまり非現実的で、無益であると、呼ばれる。それには、霊的な価値はない。『ナ・チャ・タット・プレティヤ・ノー・イハ』――『それは、この人生においても、来世においても、何の役にも立たない』。至高者と、聖典のプロセスへの、信仰がなければ、一見、敬虔に見える行為でさえ、実を結ばない。信仰こそが、物質的な行動を、霊的なものへと、変容させる、不可欠な、成分なのである。それがなければ、我々のすべての努力は、究極的には、無駄なのである。"
+      }
+    },
+    {
+      "chapter": 18,
+      "verse_count": 78,
+      "filename": "gita_ch18_combined.json",
+      "file_size_bytes": 174158,
+      "first_verse": {
+        "chapter": 18,
+        "verse": 1,
+        "text": "arjuna uvācha saṁnyāsasya mahā-bāho tattvam ichchhāmi veditum tyāgasya cha hṛṣīkeśa pṛthak keśiniṣūdana",
+        "importance": 10,
+        "translation": "Arjuna said: O mighty-armed son of Kuntī, I wish to understand the purpose of renunciation [saṁnyāsa] and of the renounced order of life [tyāga], O killer of the Kesi demon, Hṛṣīkeśa.",
+        "translation_jp": "アルジュナは言った：強大な腕を持つクンティの息子よ、私は放棄（サニヤサ）の目的と、放棄された人生の秩序（チャガ）の目的を理解したい、ケーシ悪魔を殺す者、フリシケーシャよ。",
+        "insights": "Arjuna, My mighty-armed friend, begins this final chapter with a perfect question to summarize all My teachings. He wishes to understand the essence ('tattvam') of 'sannyasa' (the renounced order) and 'tyaga' (renunciation). Though they seem similar, he wants to know their distinct purposes. Addressing Me as 'Hrishikesha' (master of the senses) and 'Keshinisudana' (killer of the Kesi demon), he acknowledges My power to control the senses and destroy all doubts. This question allows Me to conclude My teachings by clarifying the true meaning of renunciation, which is the key to performing action without bondage, the very essence of Karma Yoga.",
+        "insights_jp": "我が強大な腕を持つ友、アルジュナは、この最終章を、私のすべての教えを要約する完璧な質問で始める。彼は、『サニヤサ』（放棄された秩序）と『チャガ』（放棄）の本質（『タットヴァム』）を理解したいと願っている。それらは似ているように見えるが、彼はその明確な目的を知りたがっている。私を『フリシケーシャ』（感覚の主）そして『ケーシニシュダナ』（ケーシ悪魔を殺す者）と呼ぶことで、彼は感覚を制御し、すべての疑念を破壊する私の力を認めている。この質問は、私が、束縛なく行動を遂行するための鍵である、放棄の真の意味を明確にすることによって、私の教えを締めくくることを可能にする。それこそが、カルマ・ヨーガのまさにその本質なのである。"
+      },
+      "last_verse": {
+        "chapter": 18,
+        "verse": 78,
+        "text": "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ tatra śrīr vijayo bhūtir dhruvā nītir matir mama",
+        "importance": 10,
+        "translation": "Wherever there is Kṛṣṇa, the master of all mystics, and wherever there is Arjuna, the supreme archer, there will also be opulence, victory, extraordinary power, and morality. That is my opinion.",
+        "translation_jp": "すべての神秘主義の主であるクリシュナがいるところ、そして最高の弓兵であるアルジュナがいるところには、豊かさ、勝利、並外れた力、そして道徳も必ずあるだろう。それが私の意見である。",
+        "insights": "Sanjaya gives his final opinion, the ultimate conclusion of the entire Bhagavad-gita. 'Yatra yogesvarah krsno,' 'Wherever there is Krishna, the master of all mysticism,' 'yatra partho dhanur-dharah,' 'and wherever there is Arjuna, the supreme archer,' 'tatra,' 'there,' will certainly be 'srir' (opulence), 'vijayo' (victory), 'bhutir' (extraordinary power), and 'dhruva nitir' (firm morality). This is 'matir mama,' his firm opinion. When the Supreme Lord and His pure devotee are united, victory, prosperity, power, and righteousness are guaranteed. This is the final blessing and the ultimate assurance for all who follow this sacred path.",
+        "insights_jp": "サンジャヤは、その最後の意見、全バガヴァッド・ギーターの、究極の結論を、述べる。『ヤートラ・ヨーゲーシュヴァラハ・クリシュノー』、『すべての神秘主義の主である、クリシュナがいるところ』、『ヤートラ・パールトー・ダヌル・ダラハ』、『そして最高の弓兵である、アルジュナがいるところ』、『タトラ』、『そこ』には、確かに、『シュリール』（豊かさ）、『ヴィジャヨー』（勝利）、『ブーティル』（並外れた力）、そして『ドルヴァー・ニーティル』（固い道徳）が、あるだろう。これこそが、『マティル・ママ』、彼の固い意見なのである。至高の主と、その純粋な献身者が、団結するとき、勝利、繁栄、力、そして正義は、保証される。これこそが、この神聖な道を、たどる、すべての人にとっての、最終的な祝福であり、究極の保証なのである。"
+      }
+    }
+  ]
+}
