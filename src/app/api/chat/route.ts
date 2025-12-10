@@ -3,10 +3,100 @@ import { generateKrishnaResponse } from '@/lib/openai';
 import { searchVersesByKeyword, getVerseByReference } from '@/lib/verse-utils';
 import { Verse } from '@/services/bhagavad-gita';
 import { Message } from '@/components/ChatInterface';
+import { rateLimit, getIdentifier } from '@/lib/rate-limit';
+
+// Rate limiter: 10 requests per minute per IP
+const limiter = rateLimit({
+  interval: 60 * 1000, // 1 minute
+  uniqueTokenPerInterval: 10,
+});
 
 export async function POST(req: NextRequest) {
+  // Apply rate limiting
+  const identifier = getIdentifier(req);
+  const rateLimitResult = await limiter.check(identifier);
+
+  if (!rateLimitResult.success) {
+    return NextResponse.json(
+      {
+        error: 'Too many requests. Please try again later.',
+        retryAfter: Math.ceil((rateLimitResult.reset - Date.now()) / 1000),
+      },
+      {
+        status: 429,
+        headers: {
+          'X-RateLimit-Limit': rateLimitResult.limit.toString(),
+          'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
+          'X-RateLimit-Reset': rateLimitResult.reset.toString(),
+          'Retry-After': Math.ceil((rateLimitResult.reset - Date.now()) / 1000).toString(),
+        },
+      }
+    );
+  }
+
   try {
     const { messages, language = 'en' }: { messages: Message[]; language?: 'en' | 'jp' } = await req.json();
+
+    // Input validation
+    if (!messages || !Array.isArray(messages)) {
+      return NextResponse.json(
+        { error: 'Invalid request: messages must be an array' },
+        { status: 400 }
+      );
+    }
+
+    if (messages.length === 0) {
+      return NextResponse.json(
+        { error: 'Invalid request: messages array cannot be empty' },
+        { status: 400 }
+      );
+    }
+
+    if (messages.length > 50) {
+      return NextResponse.json(
+        { error: 'Invalid request: too many messages (max 50)' },
+        { status: 400 }
+      );
+    }
+
+    // Validate each message
+    for (const message of messages) {
+      if (!message.role || !message.content) {
+        return NextResponse.json(
+          { error: 'Invalid request: each message must have role and content' },
+          { status: 400 }
+        );
+      }
+
+      if (typeof message.content !== 'string') {
+        return NextResponse.json(
+          { error: 'Invalid request: message content must be a string' },
+          { status: 400 }
+        );
+      }
+
+      if (message.content.length > 4000) {
+        return NextResponse.json(
+          { error: 'Invalid request: message content too long (max 4000 characters)' },
+          { status: 400 }
+        );
+      }
+
+      if (!['user', 'assistant'].includes(message.role)) {
+        return NextResponse.json(
+          { error: 'Invalid request: message role must be "user" or "assistant"' },
+          { status: 400 }
+        );
+      }
+    }
+
+    // Validate language
+    if (language && !['en', 'jp'].includes(language)) {
+      return NextResponse.json(
+        { error: 'Invalid request: language must be "en" or "jp"' },
+        { status: 400 }
+      );
+    }
 
     // Generate Krishna's response
     const response = await generateKrishnaResponse(messages, language);
