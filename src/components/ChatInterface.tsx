@@ -173,17 +173,7 @@ export default function ChatInterface({ language }: ChatInterfaceProps) {
                   <span className="font-sans italic font-bold">{message.role === 'user' ? 'You' : 'Lord Krishna'}</span>
                 )}
               </div>
-              <ReactMarkdown
-                disallowedElements={['script', 'iframe', 'object', 'embed', 'form']}
-                unwrapDisallowed={true}
-                components={{
-                  a: ({ node, ...props }) => (
-                    <a {...props} rel="noopener noreferrer" target="_blank" />
-                  ),
-                }}
-              >
-                {message.content}
-              </ReactMarkdown>
+              <ReactMarkdown>{message.content}</ReactMarkdown>
             </div>
           </div>
         ))}

@@ -1,33 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getChapterInfo, getVersesFromChapter } from '@/lib/verse-utils';
 import { openai, mymodel, deepmodel } from '@/lib/openai';
-import { rateLimit, getIdentifier } from '@/lib/rate-limit';
-
-// Rate limiter: 20 requests per minute per IP (less intensive than chat)
-const limiter = rateLimit({
-  interval: 60 * 1000,
-  uniqueTokenPerInterval: 20,
-});
 
 export async function GET(req: NextRequest) {
-  // Apply rate limiting
-  const identifier = getIdentifier(req);
-  const rateLimitResult = await limiter.check(identifier);
-
-  if (!rateLimitResult.success) {
-    return NextResponse.json(
-      { error: 'Too many requests. Please try again later.' },
-      {
-        status: 429,
-        headers: {
-          'X-RateLimit-Limit': rateLimitResult.limit.toString(),
-          'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
-          'Retry-After': Math.ceil((rateLimitResult.reset - Date.now()) / 1000).toString(),
-        },
-      }
-    );
-  }
-
   try {
     // Get chapter number and language from query parameters
     const { searchParams } = new URL(req.url);
