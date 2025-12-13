@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { searchVersesByKeyword, searchVersesByTheme, GITA_THEMES } from '@/lib/verse-utils';
+import { searchVersesByKeyword, searchVersesByTheme, GITA_THEMES, GITA_THEMES_JP } from '@/lib/verse-utils';
 import { Verse } from '@/services/bhagavad-gita';
 
 export async function GET(req: NextRequest) {
@@ -33,7 +33,7 @@ export async function GET(req: NextRequest) {
       type: theme ? 'theme' : 'keyword',
       results: verses,
       count: verses.length,
-      availableThemes: GITA_THEMES,
+      availableThemes: language === 'jp' ? GITA_THEMES_JP : GITA_THEMES,
     });
   } catch (error) {
     console.error('Error in search API:', error);

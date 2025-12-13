@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Verse } from '@/services/bhagavad-gita';
 import VerseDisplay from './VerseDisplay';
-import { GITA_THEMES } from '@/lib/verse-utils';
+import { GITA_THEMES, GITA_THEMES_JP } from '@/lib/verse-utils';
 
 interface VerseSearchProps {
   language: 'en' | 'jp';
@@ -88,7 +88,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
             {language === 'jp' ? 'または、テーマで探す' : 'Or Browse by Theme'}
           </p>
           <div className="flex flex-wrap gap-2">
-            {GITA_THEMES.map((theme) => (
+            {GITA_THEMES.map((theme, index) => (
               <button
                 key={theme}
                 type="button"
@@ -99,7 +99,7 @@ export default function VerseSearch({ language }: VerseSearchProps) {
                     : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
                 }`}
               >
-                {theme}
+                {language === 'jp' ? GITA_THEMES_JP[index] : theme}
               </button>
             ))}
           </div>
