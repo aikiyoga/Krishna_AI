@@ -60,21 +60,37 @@ export async function POST(req: NextRequest) {
 // Helper function to extract verse references from text (e.g., "Bhagavad Gita 2.47" or "Chapter 2, Verse 47")
 function extractVerseReferences(text: string): { chapter: number; verse: number }[] {
   const references: { chapter: number; verse: number }[] = [];
-  
+  let match;
+
   // Pattern for "Chapter X, Verse Y" or "Chapter X Verse Y"
   const chapterVersePattern = /Chapter\s+(\d+)[\s,]+Verse\s+(\d+)/gi;
-  let match;
-  
   while ((match = chapterVersePattern.exec(text)) !== null) {
     references.push({
       chapter: parseInt(match[1], 10),
       verse: parseInt(match[2], 10),
     });
   }
-  
+
+  // Pattern for Japanese "第X章第Y節" or "第X章、第Y節"
+  const jpChapterVersePattern = /第\s*(\d+)\s*章[、,\s]*第\s*(\d+)\s*節/g;
+  while ((match = jpChapterVersePattern.exec(text)) !== null) {
+    references.push({
+      chapter: parseInt(match[1], 10),
+      verse: parseInt(match[2], 10),
+    });
+  }
+
+  // Pattern for Japanese short form "X章Y節"
+  const jpShortPattern = /(\d+)\s*章\s*(\d+)\s*節/g;
+  while ((match = jpShortPattern.exec(text)) !== null) {
+    const chapter = parseInt(match[1], 10);
+    if (chapter >= 1 && chapter <= 18) {
+      references.push({ chapter, verse: parseInt(match[2], 10) });
+    }
+  }
+
   // Pattern for "X.Y" format (e.g., "2.47")
   const dotPattern = /\b(\d+)\.(\d+)\b/g;
-  
   while ((match = dotPattern.exec(text)) !== null) {
     // Only add if it looks like a valid chapter/verse reference (chapters 1-18)
     const chapter = parseInt(match[1], 10);
@@ -85,24 +101,36 @@ function extractVerseReferences(text: string): { chapter: number; verse: number 
       });
     }
   }
-  
-  return references;
+
+  // Deduplicate
+  return Array.from(
+    new Map(references.map(r => [`${r.chapter}-${r.verse}`, r])).values()
+  );
+}
+
+// Helper function to detect if text is primarily Japanese
+function isJapanese(text: string): boolean {
+  return /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text);
 }
 
 // Helper function to extract potential keywords from user message
 function extractKeywords(text: string): string[] {
+  if (isJapanese(text)) {
+    return extractJapaneseKeywords(text);
+  }
+
   // Remove common words and punctuation
   const cleanedText = text.toLowerCase()
     .replace(/[.,?!;:'"()\[\]{}]/g, '')
     .replace(/\s+/g, ' ')
     .trim();
-  
+
   // Split into words
   const words = cleanedText.split(' ');
-  
+
   // Filter out common words (simple stopwords)
-  const stopwords = ['a', 'an', 'the', 'and', 'or', 'but', 'is', 'are', 'was', 'were', 
-    'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 
+  const stopwords = ['a', 'an', 'the', 'and', 'or', 'but', 'is', 'are', 'was', 'were',
+    'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
     'shall', 'should', 'can', 'could', 'may', 'might', 'must', 'to', 'of', 'in', 'on',
     'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during',
     'before', 'after', 'above', 'below', 'from', 'up', 'down', 'i', 'me', 'my', 'myself',
@@ -118,11 +146,28 @@ function extractKeywords(text: string): string[] {
     'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only',
     'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should',
     'now', 'tell', 'know', 'like', 'go', 'make', 'say', 'see', 'time', 'look'];
-  
-  const keywords = words.filter(word => 
+
+  const keywords = words.filter(word =>
     word.length > 3 && !stopwords.includes(word)
   );
-  
+
   // Return unique keywords
   return Array.from(new Set(keywords));
+}
+
+// Extract keywords from Japanese text by matching against Gita-related terms
+function extractJapaneseKeywords(text: string): string[] {
+  const jpKeywords = [
+    '義務', 'ダルマ', 'カルマ', '献身', 'バクティ', '知識', '行動',
+    '瞑想', 'ヨーガ', '放棄', '自己実現', '神聖', '自然', 'グナ',
+    '解放', 'モクシャ', '戦争', '平和', '智慧', '無執着',
+    'アートマン', '魂', '真我', '神', '至上', '主',
+    '行為', '業', '信愛', '崇拝', '愛', '苦しみ', '喜び',
+    '恐れ', '怒り', '欲望', '心', '精神', '死', '生',
+    '輪廻', '悟り', '修行', '祈り', '真理', '義', '責任',
+    'サットヴァ', 'ラジャス', 'タマス', 'プラクリティ', 'ジュニャーナ',
+  ];
+
+  const found = jpKeywords.filter(keyword => text.includes(keyword));
+  return found.length > 0 ? found : [];
 }
