@@ -57,6 +57,7 @@ export default function Home() {
             src="/krishna.jpg"
             alt="Lord Krishna"
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 50vw"
             style={{ objectFit: 'cover' }}
             priority
           />
