@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "overrides": {
     "langsmith": "^0.7.1",
-    "uuid": "^14.0.0"
+    "uuid": "^14.0.0",
+    "postcss": "^8.5.14"
   },
   "dependencies": {
     "@langchain/core": "^1.1.8",
