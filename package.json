@@ -11,12 +11,12 @@
   "overrides": {
     "langsmith": "^0.7.1",
     "uuid": "^14.0.0",
-    "postcss": "^8.5.14"
+    "postcss": "^8.5.23"
   },
   "dependencies": {
     "@langchain/core": "^1.2.1",
     "langchain": "^1.5.2",
-    "next": "^16.2.9",
+    "next": "^16.4.3",
     "openai": "^6.45.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
